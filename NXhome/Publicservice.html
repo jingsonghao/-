@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>公众服务</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+	</head>
+
+	<body>
+		<!--顶部-->
+		<div class=" top">
+			<div class="container">
+				<ul class="row pull-right top-ul">
+					<li class="col-sm-4 col-sm-offset-3 text-right top-li loging">
+						<span class="text-red" onmouseover="display()">
+                    登陆
+                <div class="sign" id="sign" onmouseout="disappear()">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="账号">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <a class="btn btn-default" href="#" style="color: #fff;width: 100%;background-color:#c8000b;">登录</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class=" col-sm-10">
+                                <div class="checkbox" style="color: rgb(179,179,179);">
+                                    忘记密码?
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                </span>
+					</li>
+					<li class="col-sm-4 text-right top-li">
+						<span class="weixin"></span> 官方微信
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--主体-->
+		<div class="main-top">
+			<!--头-->
+			<div class="header">
+				<div class="container">
+					<div class="header-l pull-left">
+						<img src="img/logo.png">
+					</div>
+					<div class="header-r pull-right">
+						<input type="text" placeholder="搜索">
+					</div>
+				</div>
+			</div>
+			<!--导航-->
+			<div class="container">
+				<div class="m-nav clearfix">
+					<ul>
+						<li class="pull-left">
+							<a  href="index.html">
+								<span>首页</span>
+
+							</a>
+						</li>
+						<li class="pull-left">
+							<a href="Traceability.html">
+								<span>追溯动态</span>
+
+							</a>
+						</li>
+						<li class="pull-left">
+							<a href="ch.html">
+								<span>地市专题</span>
+
+							</a>
+						</li>
+						<li class="pull-left">
+							<a href="Characteristic.html">
+								<span>特色产品</span>
+
+							</a>
+						</li>
+						<li class="pull-left">
+							<a href="Povertyalleviation.html">
+								<span>精准扶贫</span>
+
+							</a>
+						</li>
+						<li class="pull-left">
+							<a href="Publicservice.html">
+								<span>公众服务</span>
+
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<!--新闻动态-->
+			<div class="zxcx">
+				<div class="container-title container-title-2">
+					<h4>
+                        <span class="text-black">追溯</span>
+                        <span class="text-red">查询</span>
+                    </h4>
+
+				</div>
+
+				<div class="zxcx-one">
+					<p>方式一：在线查询</p>
+					<div class="banner-tab row banner-tab-2">
+						<ul id="myTab" class="col-sm-12 nav">
+							<li class="pull-left active">
+								<a href="#ma" data-toggle="tab">追溯码查询</a>
+							</li>
+							<li class="pull-left">
+								<a href="#name" data-toggle="tab">追溯企业查询</a>
+							</li>
+						</ul>
+						<div id="myTabContent" class="tab-content">
+							<div class="col-sm-12 banner-seach tab-pane fade in active" id="ma">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="请输入追溯码">
+									<div class="input-group-addon my-group-addon">
+										<a href="./order-tracingChain.html" style="color: #fff;display: block;">查询</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 banner-seach tab-pane fade" id="name">
+								<div class="input-group input-gr2">
+									<input type="text" class="form-control" placeholder="请输入企业名">
+									<div class="input-group-addon my-group-addon">
+										<a href="./companyLists.html" style="color: #fff;display: block;">查询</a>
+									</div>
+								</div>
+							</div>
+							<a class="col-sm-12 gjcx" style="color: #a7a7a7;margin-top: 5px;">高级查询</a>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="zxcx-two">
+					<p>方式二：微信查询</p>
+					<div class="zxcx-two-1">
+						<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+						</ul>
+						<span></span>
+
+					</div>
+					<div class="zxcx-two-2">
+						<ul>
+							<li><img src="img/ipone_03.jpg" />
+
+							</li>
+							<li><img src="img/ipone_05.jpg" />
+
+							</li>
+							<li><img src="img/ipone_07.jpg" />
+
+							</li>
+							<li><img src="img/ipone_09.jpg" />
+
+							</li>
+						</ul>
+						<p class="zxcx-p1">打开手机扫描“E追溯”二维码，下载客户端。</p>
+						<p class="zxcx-p2">登录“E追溯”手机客户端，点击界面最下方应用区域“微服务”，显示“扫码查询”，及“输入查询”两种方式。</p>
+						<p class="zxcx-p3">打开“E追溯”客户端，使用“微服务-扫码查询”，对准二维码扫描，即可出查询结果。</p>
+						<p class="zxcx-p4">输入需要查询的正确追溯码，即可得到结果。</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		</div>
+		<div class="cjwt-box">
+			<div class="cjwt">
+				<div class="cjwt-1">
+					<div class="container-title-1">
+						<h4 class="pull-left">
+							<span class="text-black">常见</span>
+							<span class="text-red">问题</span>
+						</h4>
+						<span class="text-red pull-right  text-g">更多 >></span>
+
+					</div>
+					<div class="tab-pane fade in active">
+						<ul>
+							<li class="ellipse item">
+								蔬菜零售市场每个环节需要采集哪些...
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								我在家家悦超市49门店买到的商品...
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								肉类批发的每个环节需要采集哪些信息？
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								买到的商品发现过期了该如和处理？
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								为什么说批发市场、屠宰厂是肉菜追溯体...
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								城市追溯管理平台基本功能是什么？
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								蔬菜零售市场每个环节需要采集哪些...
+
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								我在家家悦超市49门店买到的商品...
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								肉类批发的每个环节需要采集哪些信息？
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								买到的商品发现过期了该如和处理？
+								<span class="item-time">2017-10-10</span>
+							</li>
+						</ul>
+
+					</div>
+
+				</div>
+				<div class="cjwt-1">
+					<div class="container-title-1">
+						<h4 class="pull-left">
+							<span class="text-black">政策</span>
+							<span class="text-red">法规</span>
+						</h4>
+						<span class="text-red pull-right  text-g">更多 >></span>
+
+					</div>
+					<ul class="tab-cjwt">
+						<li class="act-cjwt">宁夏追溯政策及法规</li>
+						<li>国家追溯政策及法规</li>
+					</ul>
+					<div class="tab-pane fade in active tab-1-cjwt" style="display: block;">
+						<ul>
+							<li class="ellipse item">
+								蔬菜零售市场每个环节需要采集哪些...
+
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								我在家家悦超市49门店买到的商品...
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								肉类批发的每个环节需要采集哪些信息？
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								买到的商品发现过期了该如和处理？
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								为什么说批发市场、屠宰厂是肉菜追溯体...
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								城市追溯管理平台基本功能是什么？
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								蔬菜零售市场每个环节需要采集哪些...
+
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								我在家家悦超市49门店买到的商品...
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								肉类批发的每个环节需要采集哪些信息？
+								<span class="item-time">2017-10-10</span>
+							</li>
+
+						</ul>
+
+					</div>
+
+					<div class="tab-pane fade in active tab-1-cjwt">
+						<ul>
+
+							<li class="ellipse item">
+								为什么说批发市场、屠宰厂是肉菜追溯体...
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								城市追溯管理平台基本功能是什么？
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								蔬菜零售市场每个环节需要采集哪些...
+
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								我在家家悦超市49门店买到的商品...
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								肉类批发的每个环节需要采集哪些信息？
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								蔬菜零售市场每个环节需要采集哪些...
+
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								我在家家悦超市49门店买到的商品...
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								肉类批发的每个环节需要采集哪些信息？
+								<span class="item-time">2017-10-10</span>
+							</li>
+							<li class="ellipse item">
+								买到的商品发现过期了该如和处理？
+								<span class="item-time">2017-10-10</span>
+							</li>
+
+						</ul>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="zxjy">
+			<div class="container-title-1">
+				<h4 class="pull-left">
+                                <span class="text-black">咨询</span>
+                                <span class="text-red">建议</span>
+                            </h4>
+				<span class="text-red pull-right  text-g">更多 >></span>
+
+			</div>
+
+			<div class="zxjy-ipone">
+				<div class="zxjy-ipone">
+					<div class="zxjy-ipone-1">
+						<input type="手机号" name="" id="" value="" />
+						<a href="">查询</a>
+					</div>
+					<a href="zxjy.html" class="zxjy-ipone-2" style="color: #ffffff">
+						咨询建议入口
+					</a>
+				</div>
+				<div class="zxnr">
+					<div class="zxjy-zxnr">
+						<p>咨询内容：</p>
+						<p>买到的商品发现过期了该如和处理？</p>
+						<p>回复内容：</p>
+						<p>可以到当地蔬菜零售市场退，部门负责人接待顾客.并审核顾客是否具 有超市的收银小票或者发票，以及购物时间，所 购买的商品是否属于 小家电或不可退货换商品。
+						</p>
+					</div>
+					<div class="zxjy-zxnr">
+						<p>咨询内容：</p>
+						<p>买到的商品发现过期了该如和处理？</p>
+						<p>回复内容：</p>
+						<p>可以到当地蔬菜零售市场退，部门负责人接待顾客.并审核顾客是否具 有超市的收银小票或者发票，以及购物时间，所 购买的商品是否属于 小家电或不可退货换商品。
+						</p>
+					</div>
+					<div class="zxjy-zxnr">
+						<p>咨询内容：</p>
+						<p>买到的商品发现过期了该如和处理？</p>
+						<p>回复内容：</p>
+						<p>可以到当地蔬菜零售市场退，部门负责人接待顾客.并审核顾客是否具 有超市的收银小票或者发票，以及购物时间，所 购买的商品是否属于 小家电或不可退货换商品。
+						</p>
+					</div>
+					<div class="zxjy-zxnr">
+						<p>咨询内容：</p>
+						<p>买到的商品发现过期了该如和处理？</p>
+						<p>回复内容：</p>
+						<p>可以到当地蔬菜零售市场退，部门负责人接待顾客.并审核顾客是否具 有超市的收银小票或者发票，以及购物时间，所 购买的商品是否属于 小家电或不可退货换商品。
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+       <!--底部-->
+		<div class="footer">
+			
+			<span>版权所有：宁夏回族自治区商务厅| 技术支持：中商流通生产力促进中心有限公司</span>
+		</div>
+		<!--在线帮助-->
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/topred.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$(".tab-cjwt li").click(function() {
+			var i = $(this).index()
+			$(".tab-1-cjwt").hide().eq(i).stop().show();
+			$(".tab-cjwt li").removeClass("act-cjwt").eq(i).addClass("act-cjwt");
+
+		})
+	</script>
+
+</html>

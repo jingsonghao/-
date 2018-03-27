@@ -1,0 +1,23 @@
+index.html——————首页
+ch.html------地市专题
+Characteristic.html--------特色产品
+Povertyalleviation.html--------精准扶贫
+Publicservice.html-----公众服务
+zxjy.html-----------咨询服务
+
+reset.css----zxjy.html的css
+bootstrap.min.css----------框架css
+common.css----样式初始化
+main.css---------------页面主要样式
+number-pb.css-------------地市专题 进度条css
+main2.css---------------news.html和newzx.html的css
+Tp.css-------tp.html的css
+
+js
+main.js-----是首页轮播图的js
+jq_scroll.js------向上滚动轮播图的js
+jquery.velocity.min.js，number-pb.js-----进度条的js
+
+topred.js-----导航js效果
+
+选项卡的js 全部在页面的底部

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>城市专题</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/number-pb.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.velocity.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/number-pb.js" type="text/javascript" charset="utf-8"></script>
+		<script src=".js/topred.js"></script>
+	</head>
+
+	<body>
+<!--顶部-->
+		<div class=" top">
+			<div class="container">
+				<ul class="row pull-right top-ul">
+					<li class="col-sm-4 col-sm-offset-3 text-right top-li loging">
+						<span class="text-red" onmouseover="display()">
+                    登陆
+                <div class="sign" id="sign" onmouseout="disappear()">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="账号">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <a class="btn btn-default" href="#" style="color: #fff;width: 100%;background-color:#c8000b;">登录</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class=" col-sm-10">
+                                <div class="checkbox" style="color: rgb(179,179,179);">
+                                    忘记密码?
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                </span>
+					</li>
+					<li class="col-sm-4 text-right top-li" >
+						<span class="weixin"></span> 官方微信
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--头-->
+		<div class="main-top">
+				<div class="header">
+					<div class="container">
+						<div class="header-l pull-left">
+							<img src="img/logo.png">
+						</div>
+						<div class="header-r pull-right">
+							<input type="text" placeholder="搜索">
+						</div>
+					</div>
+				</div>
+				<!--导航-->
+				<div class="container">
+					<div class="m-nav clearfix">
+						<ul>
+							<li class="pull-left">
+								<a  href="index.html">
+									<span>首页</span>
+
+								</a>
+							</li>
+							<li class="pull-left">
+								<a href="Traceability.html">
+									<span>追溯动态</span>
+
+								</a>
+							</li>
+							<li class="pull-left">
+								<a href="ch.html">
+									<span>地市专题</span>
+
+								</a>
+							</li>
+							<li class="pull-left">
+								<a href="Characteristic.html">
+									<span>特色产品</span>
+
+								</a>
+							</li>
+							<li class="pull-left">
+								<a href="Povertyalleviation.html">
+									<span>精准扶贫</span>
+
+								</a>
+							</li>
+							<li class="pull-left">
+								<a href="Publicservice.html">
+									<span>公众服务</span>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				<!--新闻动态-->
+				
+		<!--主体-->
+		<div class="zong">
+			
+				
+		
+				<div class="center">
+					<!--城市概况-->
+					<div class="nav-cszt">
+						<div class="nav_top">
+							<p class="cs">城市<span style="color: #c8000b;">概况</span>
+							</p>
+							<p id="gd">更多 >></p>
+						</div>
+						<div class="xian">
+							<div class="xian_d"></div>
+						</div>
+						<!--地图-->
+						<div class="Dt">
+							<div class="Dt_left">
+								<select id="content" name="selse">
+									<option value="">银川市</option>
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+								<div class="di_tu"></div>
+							</div>
+							<!--特色企业-->
+							<div class="Dt_right">
+								<ul>
+									<li class="col">特色企业</li>
+									<li>政策法规</li>
+								</ul>
+								<div class="neirong" style="display: block;">
+									<p>· 蔬菜零售市场每个环节需要采集哪些...&nbsp; <span> 2017-7-26</span></p>
+									<p>· 我在家家悦超市49门店买到的商品...&nbsp; <span> 2017-7-26</span></p>
+									<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+									<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+									<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+									<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+									<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+									<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+									<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+									<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+									<p>· 肉类批发的每个环节需要采集哪...&nbsp; <span> 2017-7-26</span></p>
+								</div>
+								<div class="neirong">
+									<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+									<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+									<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+									<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+									<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+									<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+									<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+									<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+									<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+									<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+									<p> · 肉类批发的每个环节需要采集哪 ...&nbsp; <span> 2017-7-26</span></p>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<!--评审-->
+				<div class="P_s">
+					<div class="P_sl">
+						<p>评审<span style="color: #c8000b;">情况</span></p>
+						<div class="xian1">
+							<div class="xian1_d"></div>
+							<div class="Dt_left1">
+								<select id="content" name="selse">
+									<option value="">银川市</option>
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+								<div class="xiao">
+
+									<div class="container-jdt">
+
+										<section id="random">
+
+											<article>
+
+												<div class="number-pb">
+
+													<div class="number-pb-shown"></div>
+
+													<div class="number-pb-num">0%</div>
+
+												</div>
+
+											</article>
+
+										</section>
+
+									</div>
+									<div class="zi">
+										<div class="pp"></div>
+										<div class="pp1">通过企业数</div>
+										<div class="pp2"></div>
+										<div class="pp3">申报企业数</div>
+									</div>
+								</div>
+								<div class="Ps">
+									<p>· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></p>
+									<p> · 我在家家悦超市49门店买到的商品...<span>2017-7-26</span></p>
+									<p>· 肉类批发的每个环节需要采集哪...<span>2017-7-26</span></p>
+									<p>· 蔬菜零售市场每个环节需要采集哪些...<span>2017-7-26</span></p>
+									<p> · 我在家家悦超市49门店买到的商品...<span>2017-7-26</span></p>
+									<p>· 肉类批发的每个环节需要采集哪...<span>2017-7-26</span></p>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					<div class="P_sr">
+						<p>市级平台<span style="color: #c8000b;">入口</span></p>
+						<div class="xian1" style="width: 286px;">
+							<div class="xian1_d"></div>
+						</div>
+						<!--用户登录-->
+						<div class="Yh">用户登录</div>
+						<div class="Dl">
+
+							<div class="Y_h">
+								<div class="t"></div>
+								<input type="text" name="" id="" value="ningxia" />
+							</div>
+							<div class="M_m">
+								<div class="t1"></div>
+								<input type="text" name="" id="" value="用户密码" />
+							</div>
+							<div class="Y_zZ">
+								<div class="Y_z">
+									<input type="text" name="" id="" value="验证码" />
+
+								</div>
+								<div class="Tp">
+
+								</div>
+								<div class="Tp1">
+
+								</div>
+							</div>
+							<div class="denglu">
+								<input type="button" name=""  value="登录" />
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+			<!--底部-->
+		<div class="footer">
+			
+			<span>版权所有：宁夏回族自治区商务厅| 技术支持：中商流通生产力促进中心有限公司</span>
+		</div>
+	</body>
+	<script src="js/topred.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$(function() {
+
+			function randomPercentage() {
+
+				return Math.floor(Math.random() * 100);
+
+			}
+
+			var loopBars = $('#random .number-pb').NumberProgressBar().each(function() {
+
+				$(this).reach(randomPercentage());
+
+			});
+
+			window.setInterval(function() {
+
+				loopBars.each(function() {
+
+					$(this).reach(randomPercentage());
+
+				})
+
+			}, 12000);
+
+			var num = randomPercentage();
+
+			var title = $('#sample-pb .title').text('@' + num);
+
+			var controlBar = $('#sample-pb .number-pb').NumberProgressBar({
+
+				duration: 12000,
+
+				percentage: num
+
+			});
+
+			var $controls = $('#sample-pb .control');
+
+			$controls.filter('.empty').click(function() {
+				animate(0);
+			})
+
+			$controls.filter('.minus-10').click(function() {
+				animate(num - 10);
+			})
+
+			$controls.filter('.minus-30').click(function() {
+				animate(num - 30);
+			})
+
+			$controls.filter('.plus-10 ').click(function() {
+				animate(num + 10);
+			})
+
+			$controls.filter('.plus-30 ').click(function() {
+				animate(num + 30);
+			})
+
+			$controls.filter('.full').click(function() {
+				animate(100);
+			})
+
+			function animate(val) {
+
+				if(val < 0) {
+
+					num = 0;
+
+				} else if(val > 100) {
+
+					num = 100;
+
+				} else {
+
+					num = val
+
+				}
+
+				controlBar.reach(num);
+
+				title.text('@' + num);
+
+			}
+
+		});
+//		选项卡
+		$(function(){
+			var i=0;
+			$(".Dt_right ul li").click(function(){
+				i=$(this).index();
+				$(".neirong").hide().eq(i).show();
+				$(".Dt_right ul li").removeClass("col").eq(i).addClass("col");
+			})
+		})
+	</script>
+
+</html>
