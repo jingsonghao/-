@@ -1,0 +1,59 @@
+﻿【监管辅助系统】
+sbtzgl.html                 设备调整管理
+shebeijiankong.html         设备监控
+video-change-record.html    视频集中管理-视频更改记录
+video-change-management.html视频集中管理-视频资料管理
+emergency11.html            应急事件管理-应急事件记录
+early-warning               问题发现管理-问题项管理
+business-assessment-details 监管辅助系统-考核评价管理-考核记录-企业考核详情
+attendance-chart-datails    工作考核管理-综合性考核管理
+tongjifengxi.html           问题发现管理-统计分析
+maintenance-management.html 设备管理-设备维护管理
+
+                                                            {{缺少页面   【1个】}}
+???.html                    企业诚信管理  》诚信行为记录
+
+
+
+【后台管理系统】【BackgroundManagementSystem文件夹】     [ok]
+    role.html                  角色管理
+【hj】
+    user-manage.html           用户管理+当前页面四个弹窗
+【华】
+    information-publish.html   门户管理
+    Interface.html             接口管理
+    logManagement.html         日志管理
+
+                                                            {{缺少页面   【14个】 }}
+【森】
+0、z-jurisdiction-manage.html 权限管理【需求不清楚------没做】
+1、后台管理系统【首页】
+2、组织权限管理	》权限管理
+3、门户管理	》布局管理
+		>信息发布管理	》信息发布-维护
+				》信息发布-新增
+		>公众留言管理	》留言审核
+				》已反馈留言信息查看
+		》电商连接新增
+		》追溯企业新增
+4、追溯信息	》流通节点数据管理
+		》重要产品类别管理
+		》流通节点类别管理
+5、菜单管理
+
+
+【符码系统】                                               [ok]
+unique-sys.html         赋码系统首页
+                                                            {{缺少页面   【2个】 }}
+
+【追溯管理系统】:【traceBack文件夹】                         [ok]
+【华】
+filing.html		    主体信息管理—信息备案管理【导航无图标bug】
+Synthesis.html		追溯信息管理—追溯链条合成
+---tracingChain.html	链条页
+circulation.html	追溯信息管理—追溯信息查询 结果
+【hj】
+run-report-manage.html       运行报告管理
+run-report-create.html       运行报告生成
+【森】
+file-statistics.html      备案信息统计

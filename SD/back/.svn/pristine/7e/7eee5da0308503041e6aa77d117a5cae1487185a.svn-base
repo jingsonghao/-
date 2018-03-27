@@ -1,0 +1,34 @@
+﻿old: superviseHelp>sincerityActionRecord.html 新【佳硕】
+
+新：根据11-17原形 【5处】    [traceBack文件夹]
+1、traceBack/filling.html   更改
+2、新增
+traceBack/infoRecover.html      追溯信息管理>问题信息恢复
+3、新增
+traceBack/deletInfo.html          追溯信息管理>剔除信息统计
+4、更改
+traceBack/run-report-manage.html    运行报告管理 【新增手动发送页面】
+    新增
+    traceBack/handSend.html             【】【】【临时待定】【占坑】【】
+
+【02版 --- 原形】
+1、superviseHelp/sincerityActionRecord.html          新【佳硕】诚信行为记录
+2、creditArchives.html[旧的]【查看 ↓】
+    superviseHelp/QYsincerityActionRecords.html     新
+3、  /blackList.html[更改]
+
+4、sbtzgl.html [更改]【设备入库 -按钮↓】
+    superviseHelp/shebeiStorage.html    新
+5、Stock11.html[更改]
+
+
+【11-18 --- 原形】
+1、superviseHelp/early-warning.html   【改】问题项管理
+
+
+2、/superviseHelp/city-event-handling.html  新 跨城市应急事件管理-跨城市应急事件处理
+
+
+3、superviseHelp/one-exam-datail.html     新   监管辅助系统-工作考核管理-综合性考核管理-单期考核详情
+
+4、superviseHelp/one-exam-lists.html       新

@@ -1,0 +1,23 @@
+﻿【追溯管理系统】:【traceBack文件夹】
+filing.html		    主体信息管理—信息备案管理【导航无图标bug】
+Synthesis.html		追溯信息管理—追溯链条合成
+---tracingChain.html	链条页
+circulation.html	追溯信息管理—追溯信息查询 结果
+
+
+【监管辅助系统】:【supervisehelp文件夹】
+event-handling.html			应急事件管理-应急事件展示     #新增弹窗
+Stock11.html				设备管理-设备库存            #查看+详情弹窗
+attendance-record.html		工作考核管理-考核记录
+event-handling-report.html  应急事件管理-应急事件报告
+z-assess-target-manage2.html工作考核管理-考核指标管理
+z-assess-target.html        工作考核管理-考核指标类别管理
+
+【后台管理系统】【BackgroundManagementSystem文件夹】
+1、CirculationNodeData.html    追溯信息-流通节点数据管理
+2、productType.html            追溯信息-重要产品类别管理
+3、circulationNode.html        追溯信息-流通节点类别管理
+
+1、deviceType                  系统设置-设备种类管理
+2、deviceModel                 系统设置-设备型号管理
+3、deviceManage.html           系统设置-设备监控项管理

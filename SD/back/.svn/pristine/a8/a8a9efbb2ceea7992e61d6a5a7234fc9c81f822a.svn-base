@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>大数据分析系统-大数据挖掘展示</title>
+
+    <link href="../css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link type="text/css" href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/jquery-ui.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet" />
+    <link href="../css/tab.css" rel="stylesheet" />
+    <link href="../css/table-style.css" rel="stylesheet" />
+    <link href="../css/pagination.css" rel="stylesheet" />
+    <link href="../css/table-title-box.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/search.css">
+
+    <!--[if lt IE 9]>
+    <script src="../js/jianrong/html5shiv.min.js"></script>
+    <script src="../js/jianrong/respond.min.js"></script>
+    <![endif]-->
+<style>
+    /*<!--右侧tab栏样式-->*/
+    #myTab{
+        height: 570px;
+    }
+    #myTab .tab1{
+        width: 30px;
+        margin: 20px auto;
+        padding: 3px;
+        background: #1b6d85;
+        color: #fff;
+        border-radius: 3px;
+    }
+    #myTab .tab2{
+        height: 150px;
+        padding-top: 30px;
+    }
+</style>
+</head>
+
+<body class="index-content">
+<!--header-->
+<div class="navbar-box">
+    <div class="navbar">
+        <div class="container-nav">
+            <div class="header-top-border"></div>
+            <div class="header-l pull-left">
+                <img class="pull-left" src="../img/logo.png">
+                <div class="lw-title text-center pull-left">
+                    <h1>德州市重要产品追溯管理平台</h1>
+                    <span>The traceability management platform of important products in Dezhou</span>
+                </div>
+            </div>
+            <div class="header-r pull-right">
+                <div>
+                    您好！
+                    <span class="user-name">管理员</span>
+                    <a href="#">【系统管理】</a>
+                    <a href="../../home/index.html">【用户退出】</a>
+                    <div class="lw-time text-right">12:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--header end-->
+
+<!--导航菜单-->
+<div class="sidebar">
+    <div class="sidebar-collapse">
+        <div class="navbar-actions">
+            <a href="javascript:void(0);" class="open-close-menu" id="main-menu-toggle"></a>
+        </div>
+        <div class="sidebar-over-hidden">
+            <div class="sidebar-menu">
+                <nav id="menu" role="navigation">
+                    <ul class="nav nav-sidebar">
+                        <li>
+                            <a href="../traceBack/city-platform.html">
+                                <i class="fa fa-desktop" aria-hidden="true"></i><span>平台首页</span>
+                            </a>
+                        </li>
+                        <li class="nav-parent">
+                            <a>
+                                <i class="fa fa-gears (alias)" aria-hidden="true"></i><span>追溯管理系统</span>
+                            </a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="../traceBack/retrospect-manages.html">
+                                        <span>系统首页</span>
+                                    </a>
+                                </li>
+                                <li class="nav-parent">
+                                    <a>
+                                        <span>经营主体管理</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../traceBack/filling.html"><span class="text">信息备案管理</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../traceBack/filling-examine.html"><span class="text">备案信息审核</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../traceBack/file-statistics.html"><span class="text">备案信息统计</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a>
+                                        <span>追溯信息管理</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../traceBack/Synthesis.html"><span class="text">追溯链条合成</span></a>
+                                        </li>
+                                        <li><a href="../traceBack/circulation.html"><span class="text">追溯信息查询</span></a></li>
+                                        <li><a href="../traceBack/infoRecover.html"><span class="text">剔除信息恢复</span></a></li>
+                                        <li><a href="../traceBack/deletInfo.html"><span class="text">追溯信息统计</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../traceBack/run-report-manage.html">
+                                        <span>运行报告管理</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-parent">
+                            <a>
+                                <i class="fa fa-binoculars" aria-hidden="true"></i><span>监管辅助系统</span>
+                            </a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="../superviseHelp/supervise-assist.html">
+                                        <span>系统首页</span>
+                                    </a>
+                                </li>
+                                <li class="nav-parent">
+                                    <a><span class="text">工作考核管理</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="../superviseHelp/attendance-chart-datails.html"><span class="text">综合性考核</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../superviseHelp/z-assess-target-manage2.html"><span class="text">考核指标管理</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../superviseHelp/z-assess-target.html"><span class="text">考核指标类别管理</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a><span class="text">企业诚信管理</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="../superviseHelp/sincerityActionRecord.html"><span class="text">诚信行为记录</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../superviseHelp/creditArchives.html"><span class="text">信用档案管理</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../superviseHelp/blackList.html"><span class="text">黑名单管理</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a><span class="text">问题发现管理</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="../superviseHelp/early-warning.html"><span class="text">问题项管理</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../superviseHelp/problem-report-manage.html"><span>问题报告管理</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../superviseHelp/tongjifengxi.html"><span class="text">问题信息统计</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a><span class="text">应急事件管理</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="../superviseHelp/event-handling.html"><span class="text">应急事件处理</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../superviseHelp/emergency11.html"><span class="text">应急事件报告</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../superviseHelp/programme11.html"><span class="text">应急预案管理</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a><span class="text">跨城市应急事件管理</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="../superviseHelp/city-event-handling.html"><span class="text">跨城市应急事件处理</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../superviseHelp/city-emergency11.html"><span class="text">跨城市应急事件报告</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a><span class="text">视频集中管理</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="../superviseHelp/video-manage.html"><span class="text">监控视频</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../superviseHelp/monitoring-record.html"><span class="text">监控记录</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a><span class="text">设备管理</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="../superviseHelp/shebeiStorage.html"><span class="text">设备入库管理</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../superviseHelp/sbtzgl.html"><span class="text">设备调整管理</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../superviseHelp/Stock11.html"><span class="text">设备库存管理</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../superviseHelp/maintenance-management.html"><span class="text">设备维护管理</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../superviseHelp/shebeijiankong.html"><span class="text">设备监控管理</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-parent">
+                            <a>
+                                <i class="fa fa-barcode" aria-hidden="true"></i><span>赋码系统</span>
+                            </a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="../coding-system/unique-sys.html">
+                                        <span>系统首页</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../coding-system/uniqueExamine.html"><span class="text">赋码审批管理</span></a>
+                                </li>
+                                <li>
+                                    <a href="../coding-system/message-statistics.html">
+                                        <span class="text">赋码信息统计</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-parent">
+                            <a>
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i><span>大数据分析系统</span>
+                            </a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="../BigDataStatistics/big-data.html">
+                                        <span>系统首页</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../BigDataStatistics/big-data-analysis.html"><span class="text">大数据报表分析</span></a>
+                                </li>
+                                <li>
+                                    <a href="../BigDataStatistics/big-data-excavate-show.html"><span class="text">大数据挖掘展示</span></a>
+                                </li>
+                                <li>
+                                    <a href="../BigDataStatistics/caijishenghe.html"><span class="text">大数据审核监测</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-parent">
+                            <a>
+                                <i class="fa fa-gears (alias)" aria-hidden="true"></i><span>后台管理系统</span>
+                            </a>
+                            <ul class="nav">
+                                <li class="nav-parent">
+                                    <a>
+                                        <span class="text">组织权限管理</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/user-manage.html">
+                                                <span>用户管理</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/role.html">
+                                                <span>角色管理</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../backgroundmanagementsystem/powerManage.html">
+                                                <span>权限管理</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a>
+                                        <span class="text">门户管理</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/information-publish.html"><span class="text">信息发布</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/public-mess-back.html">
+                                                <span>公众留言反馈</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/premium-company.html">
+                                                <span>追溯企业</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/e-commerce-links.html">
+                                                <span>电商链接</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a>
+                                        <span class="text">追溯信息</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/CirculationNodeData.html">
+                                                <span>流通节点数据管理</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/productType.html">
+                                                <span>重要产品类别管理</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/circulationNode.html">
+                                                <span>流通节点类别管理</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a>
+                                        <span class="text">系统设置</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/deviceType.html">
+                                                <span>设备种类管理</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/deviceModel.html">
+                                                <span>设备型号管理</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/deviceManage.html">
+                                                <span>设备监控管理</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/integrityBehavior.html">
+                                                <span>诚信行为类型管理</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/integrityRate.html">
+                                                <span>诚信评级管理</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../BackgroundManagementSystem/Interface.html">
+                                        <span class="text">接口管理</span>
+                                    </a>
+                                </li>
+                                <li class="nav-parent">
+                                    <a>
+                                        <span class="text">日志管理</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/user-operation-log.html">
+                                                <span>用户操作日志</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/system-run-log.html">
+                                                <span>系统运行日志</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../BackgroundManagementSystem/Log-Settings-manage.html">
+                                                <span>日志设置项管理</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../BackgroundManagementSystem/MenuManagement.html">
+                                        <span>剔除信息统计</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../../subSystem/traceBack/city-platform.html">
+                                <i class="fa fa-desktop" aria-hidden="true"></i><span>扒鸡追溯子平台</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!--导航菜单 end-->
+
+<div class="main row">
+    <!--search 组件-->
+    <div class="shadow-boxs">
+        <div class="r-search">
+            <form class="form form-inline">
+
+                <div class="form-group">
+                    <label>展示类型</label>
+                    <select class="form-control search-01">
+                        <option>区域</option>
+                        <option>行业</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>市</label>
+                    <input type="text" class="form-control search-01" value="德州市">
+                </div>
+                <div class="form-group">
+                    <label>县/区</label>
+                    <input type="text" class="form-control search-01" value="德城区" >
+                </div>
+
+                <div class="form-group my-group">
+                    <button type="button" class="btn  btn-search"> 查询 </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--search 组件 end-->
+    <div class="shadow-boxs">
+                <div class="col-lg-12">
+                    <!--表格标题部分-->
+                    <div class="table-title-box">
+                        <h3>价格走势统计</h3>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-lg-6">
+                            <div style="width: auto;height: 500px;background:url(../img/mapss.jpg) no-repeat; background-size: 100%">
+                                <!-- <img src="../img/mapss.jpg" alt="" width="600px;"> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div id="myTabContent" class="tab-content  col-lg-11">
+                                <div class="tab-pane fade in active" id="tab01">
+                                    <div class="r-search">
+                                        <form class="form form-inline">
+                                            <div class="form-group">
+                                                <label>重要产品品种</label>
+                                                <input type="text" class="form-control search-01" >
+                                            </div>
+
+                                            <div class="form-group my-group">
+                                                <button type="button" class="btn  btn-search"> 查询 </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="shadow-boxs"  style="height: 302px;padding: 5px;">
+                                        <div class="table-container">
+                                            <div class="thead-bg"></div>
+                                            <div class="col-xs-12 table-box">
+                                                <table class="table table-condensed">
+                                                    <thead>
+                                                    <tr>
+                                                        <th><span>序号</span></th>
+                                                        <th title='企业名称'>企业名称</th>
+                                                        <th title='重要产品品种'>重要产品品种</th>
+                                                        <th title='价格'>价格</th>
+                                                        <th title='浮动'>浮动</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span>01</span>
+                                                        </td>
+                                                        <td title='银座超市'>
+                                                            银座超市
+                                                        </td>
+                                                        <td>
+                                                            扒鸡
+                                                        </td>
+                                                        <td>
+                                                            12.00
+                                                        </td>
+                                                        <td>
+                                                            ↑
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>02</span>
+                                                        </td>
+                                                        <td title='德百超市'>
+                                                            德百超市
+                                                        </td>
+                                                        <td>
+                                                            扒鸡
+                                                        </td>
+                                                        <td>
+                                                            11.00
+                                                        </td>
+                                                        <td>
+                                                            ↓
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>03</span>
+                                                        </td>
+                                                        <td title='扒鸡集团'>
+                                                            扒鸡集团
+                                                        </td>
+                                                        <td>
+                                                            扒鸡
+                                                        </td>
+                                                        <td>
+                                                            11.00
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>04</span>
+                                                        </td>
+                                                        <td title='傻小二扒鸡'>
+                                                            傻小二扒鸡
+                                                        </td>
+                                                        <td>
+                                                            扒鸡
+                                                        </td>
+                                                        <td>
+                                                            8.00
+                                                        </td>
+                                                        <td>
+                                                            ↓
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>05</span>
+                                                        </td>
+                                                        <td title='永盛斋扒鸡'>
+                                                            永盛斋扒鸡
+                                                        </td>
+                                                        <td>
+                                                            扒鸡
+                                                        </td>
+                                                        <td>
+                                                            10.00
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <nav aria-label="Page navigation" class="pull-right">
+                                            <ul class="pagination pagination-sm">
+                                                <li class="previous disabled">
+                                                    <span aria-hidden="true">«</span>
+                                                </li>
+                                                <li class="active "><a>1</a></li>
+                                                <li><a>2</a></li>
+                                                <li><a>3</a></li>
+                                                <li><a>4</a></li>
+                                                <li><a>5</a></li>
+                                                <li class="next">
+                                                    <a aria-label="Next">
+                                                        <span aria-hidden="true">»</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="tab-pane " id="tab02">
+                                    <div class="r-search">
+                                        <form class="form form-inline">
+                                            <div class="form-group">
+                                                <label>重要产品品种</label>
+                                                <input type="text" class="form-control search-01" >
+                                            </div>
+
+                                            <div class="form-group my-group">
+                                                <button type="button" class="btn  btn-search"> 查询 </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="shadow-boxs"  style="height: 302px;padding: 5px;">
+                                        <div class="table-container">
+                                            <div class="thead-bg"></div>
+                                            <div class="col-xs-12 table-box">
+                                                <table class="table table-condensed">
+                                                    <thead>
+                                                    <tr>
+                                                        <th><span>序号</span></th>
+                                                        <th title='企业名称'>企业名称</th>
+                                                        <th title='重要产品品种'>重要产品品种</th>
+                                                        <th title='价格'>价格</th>
+                                                        <th title='浮动'>浮动</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span>01</span>
+                                                        </td>
+                                                        <td title='银座超市'>
+                                                            银座超市
+                                                        </td>
+                                                        <td>
+                                                            扒鸡
+                                                        </td>
+                                                        <td>
+                                                            12.00
+                                                        </td>
+                                                        <td>
+                                                            ↑
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>02</span>
+                                                        </td>
+                                                        <td title='德百超市'>
+                                                            德百超市
+                                                        </td>
+                                                        <td>
+                                                            扒鸡
+                                                        </td>
+                                                        <td>
+                                                            11.00
+                                                        </td>
+                                                        <td>
+                                                            ↓
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>03</span>
+                                                        </td>
+                                                        <td title='扒鸡集团'>
+                                                            扒鸡集团
+                                                        </td>
+                                                        <td>
+                                                            扒鸡
+                                                        </td>
+                                                        <td>
+                                                            11.00
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>04</span>
+                                                        </td>
+                                                        <td title='傻小二扒鸡'>
+                                                            傻小二扒鸡
+                                                        </td>
+                                                        <td>
+                                                            扒鸡
+                                                        </td>
+                                                        <td>
+                                                            8.00
+                                                        </td>
+                                                        <td>
+                                                            ↓
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>05</span>
+                                                        </td>
+                                                        <td title='永盛斋扒鸡'>
+                                                            永盛斋扒鸡
+                                                        </td>
+                                                        <td>
+                                                            扒鸡
+                                                        </td>
+                                                        <td>
+                                                            10.00
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <nav aria-label="Page navigation" class="pull-right">
+                                            <ul class="pagination pagination-sm">
+                                                <li class="previous disabled">
+                                                    <span aria-hidden="true">«</span>
+                                                </li>
+                                                <li class="active "><a>1</a></li>
+                                                <li><a>2</a></li>
+                                                <li><a>3</a></li>
+                                                <li><a>4</a></li>
+                                                <li><a>5</a></li>
+                                                <li class="next">
+                                                    <a aria-label="Next">
+                                                        <span aria-hidden="true">»</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="tab-pane " id="tab03">
+                                    <div class="r-search">
+                                        <form class="form form-inline">
+                                            <div class="form-group">
+                                                <label>重要产品品种</label>
+                                                <input type="text" class="form-control search-01" >
+                                            </div>
+
+                                            <div class="form-group my-group">
+                                                <button type="button" class="btn  btn-search"> 查询 </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="shadow-boxs"  style="height: 302px;padding: 5px;">
+                                        <div class="table-container">
+                                            <div class="thead-bg"></div>
+                                            <div class="col-xs-12 table-box">
+                                                <table class="table table-condensed">
+                                                    <thead>
+                                                    <tr>
+                                                        <th><span>序号</span></th>
+                                                        <th title='企业名称'>企业名称</th>
+                                                        <th title='重要产品品种'>重要产品品种</th>
+                                                        <th title='价格'>价格</th>
+                                                        <th title='浮动'>浮动</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span>01</span>
+                                                        </td>
+                                                        <td title='银座超市'>
+                                                            银座超市
+                                                        </td>
+                                                        <td>
+                                                            扒鸡
+                                                        </td>
+                                                        <td>
+                                                            12.00
+                                                        </td>
+                                                        <td>
+                                                            ↑
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>02</span>
+                                                        </td>
+                                                        <td title='德百超市'>
+                                                            德百超市
+                                                        </td>
+                                                        <td>
+                                                            扒鸡
+                                                        </td>
+                                                        <td>
+                                                            11.00
+                                                        </td>
+                                                        <td>
+                                                            ↓
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>03</span>
+                                                        </td>
+                                                        <td title='扒鸡集团'>
+                                                            扒鸡集团
+                                                        </td>
+                                                        <td>
+                                                            扒鸡
+                                                        </td>
+                                                        <td>
+                                                            11.00
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>04</span>
+                                                        </td>
+                                                        <td title='傻小二扒鸡'>
+                                                            傻小二扒鸡
+                                                        </td>
+                                                        <td>
+                                                            扒鸡
+                                                        </td>
+                                                        <td>
+                                                            8.00
+                                                        </td>
+                                                        <td>
+                                                            ↓
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>05</span>
+                                                        </td>
+                                                        <td title='永盛斋扒鸡'>
+                                                            永盛斋扒鸡
+                                                        </td>
+                                                        <td>
+                                                            扒鸡
+                                                        </td>
+                                                        <td>
+                                                            10.00
+                                                        </td>
+                                                        <td>
+                                                            -
+                                                        </td>
+
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <nav aria-label="Page navigation" class="pull-right">
+                                            <ul class="pagination pagination-sm">
+                                                <li class="previous disabled">
+                                                    <span aria-hidden="true">«</span>
+                                                </li>
+                                                <li class="active "><a>1</a></li>
+                                                <li><a>2</a></li>
+                                                <li><a>3</a></li>
+                                                <li><a>4</a></li>
+                                                <li><a>5</a></li>
+                                                <li class="next">
+                                                    <a aria-label="Next">
+                                                        <span aria-hidden="true">»</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-btn-list shadow-boxs col-lg-1">
+                                <ul id="myTab">
+                                    <li class="tab1 tab2 active">
+                                        <a href="#tab01" data-toggle="tab" aria-expanded="true">
+                                            价格走势
+                                        </a>
+                                    </li>
+                                    <li class="tab1 tab2"><a href="#tab02" data-toggle="tab" aria-expanded="false">价格预测</a></li>
+                                    <li class="tab1"><a href="#tab03" data-toggle="tab" aria-expanded="false">德州追溯产品价格比对</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</div>
+
+
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/my-calendar.js"></script>
+<script src="../js/echarts.min.js"></script>
+
+<script>
+    // 价格走势统计
+    var zfirmChart = echarts.init($('#cover-rate')[0]);
+    var option = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                crossStyle: {
+                    color: '#fff'
+                }
+            }
+        },
+        toolbox: {
+            feature: {
+                dataView: {
+                    show: true,
+                    readOnly: false
+                },
+                magicType: {
+                    show: true,
+                    type: ['line', 'bar']
+                },
+                restore: {
+                    show: true
+                },
+                saveAsImage: {
+                    show: true
+                }
+            }
+        },
+        legend: {
+            data: ['备案数量', '价格'],
+            textStyle:{
+                fontSize:15,
+                color:'#fff'
+            }
+        },
+        xAxis: [{
+            type: 'category',
+            data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+            axisPointer: {
+                type: 'shadow'
+            },
+            axisLine: {
+                lineStyle: {
+                    type: 'solid',
+                    color: '#206194',//左边线的颜色
+                    width:'1'//坐标线的宽度
+                }
+            },
+
+        }],
+        yAxis: [
+            {
+                type: 'value',
+                name: '备案数量',
+                min: 0,
+                max: 250,
+                interval: 50,
+                axisLine: {
+                    lineStyle: {
+                        type: 'solid',
+                        color:'#206194',
+                        width:'2'
+                    }
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: '#fff'
+                    }
+                }
+            },
+            {
+                type: 'value',
+                name: '价格',
+                min: 0,
+                max: 25,
+                interval: 5,
+                axisLine: {
+                    lineStyle: {
+                        type: 'solid',
+                        color:'#206194',
+                        width:'2'
+                    }
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: '#fff'
+                    }
+                }
+            }
+        ],
+        series: [
+            {
+                name: '备案数量',
+                type: 'bar',
+                data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+                barWidth : 30,
+            },
+
+            {
+                name: '价格',
+                type: 'line',
+                yAxisIndex: 1,
+                data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+            }
+        ]
+    };
+
+    zfirmChart.setOption(option);
+    //echart 解决不同屏幕适配
+    $(window).resize(function() {
+        zfirmChart.resize();
+    })
+</script>
+
+<script>
+    // 价格走势预测
+    var zfirmChart2 = echarts.init($('#cover-rate2')[0]);
+    var option = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                crossStyle: {
+                    color: '#fff'
+                }
+            }
+        },
+        toolbox: {
+            feature: {
+                dataView: {
+                    show: true,
+                    readOnly: false
+                },
+                magicType: {
+                    show: true,
+                    type: ['line', 'bar']
+                },
+                restore: {
+                    show: true
+                },
+                saveAsImage: {
+                    show: true
+                }
+            }
+        },
+        legend: {
+            data: ['备案数量', '价格'],
+            textStyle:{
+                fontSize:15,
+                color:'#fff'
+            }
+        },
+        xAxis: [{
+            type: 'category',
+            data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+            axisPointer: {
+                type: 'shadow'
+            },
+            axisLine: {
+                lineStyle: {
+                    type: 'solid',
+                    color: '#206194',//左边线的颜色
+                    width:'1'//坐标线的宽度
+                }
+            },
+
+        }],
+        yAxis: [
+            {
+                type: 'value',
+                name: '备案数量',
+                min: 0,
+                max: 250,
+                interval: 50,
+                axisLine: {
+                    lineStyle: {
+                        type: 'solid',
+                        color:'#206194',
+                        width:'2'
+                    }
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: '#fff'
+                    }
+                }
+            },
+            {
+                type: 'value',
+                name: '价格',
+                min: 0,
+                max: 25,
+                interval: 5,
+                axisLine: {
+                    lineStyle: {
+                        type: 'solid',
+                        color:'#206194',
+                        width:'2'
+                    }
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: '#fff'
+                    }
+                }
+            }
+        ],
+        series: [
+            {
+                name: '备案数量',
+                type: 'bar',
+                data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+                barWidth : 30,
+            },
+
+            {
+                name: '价格',
+                type: 'line',
+                yAxisIndex: 1,
+                data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+            }
+        ]
+    };
+
+    zfirmChart2.setOption(option);
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        zfirmChart2.resize();
+    });
+    //echart 解决不同屏幕适配
+    $(window).resize(function() {
+        zfirmChart2.resize();
+    })
+</script>
+
+
+<script>
+    var zfirmChart3 = echarts.init($('#cover-rate3')[0]);
+            option = {
+                tooltip : {
+                    trigger: 'axis',
+                    axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                        type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                    }
+                },
+                legend: {
+                    data: ['玉林鸭子', '五福茶叶','万兴生姜','松鹤黑猪','德州香肠'],
+                    textStyle:{
+                        fontSize:15,
+                        color:'#fff'
+                    }
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis:  {
+                    type: 'value',
+                    axisLine: {
+                        lineStyle: {
+                            type: 'solid',
+                            color: '#ccc',//左边线的颜色
+                            width:'1'//坐标线的宽度
+                        }
+                    },
+                    axisLabel: {
+                        textStyle: {
+                            color: '#999',//坐标值得具体的颜色
+
+                        }
+                    }
+                },
+                yAxis: {
+                    type: 'category',
+                    data: ['山东省万兴食品有限公司','德州傻小二康健食品有限公司','山东大峰食品有限公司','明利特色蔬菜种植专业合作社','明利特色蔬菜种植专业合作社'],
+                    axisLine: {
+                        lineStyle: {
+                            type: 'solid',
+                            color:'#ccc',
+                            width:'1'
+                        }
+                    },
+                    axisLabel: {
+                        textStyle: {
+                            color: '#999'
+                        }
+                    }
+
+                },
+                series: [
+                    {
+                        name: '玉林鸭子',
+                        type: 'bar',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [320, 302, 301, 334, 390],
+                        barWidth : 30,
+                    },
+                    {
+                        name: '五福茶叶',
+                        type: 'bar',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [120, 132, 101, 134, 90],
+                        barWidth : 30,
+                    },
+                    {
+                        name: '万兴生姜',
+                        type: 'bar',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [220, 182, 191, 234, 290],
+                        barWidth : 30,
+                    },
+                    {
+                        name: '松鹤黑猪',
+                        type: 'bar',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [150, 212, 201, 154, 190],
+                        barWidth : 30,
+                    },
+                    {
+                        name: '德州香肠',
+                        type: 'bar',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight'
+                            }
+                        },
+                        data: [820, 832, 901, 934, 1290],
+                        barWidth : 30,
+                    }
+                ]
+            };
+
+        zfirmChart3.setOption(option);
+        //echart 解决不同屏幕适配
+        $(window).resize(function() {
+            zfirmChart3.resize();
+        })
+    //echart 解决不同屏幕适配
+
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            zfirmChart3.resize();
+        });
+        $(window).resize(function(){
+            zfirmChart3.resize();
+        });
+</script>
+<script>
+    /*消费量*/
+    var zfirmChart4 = echarts.init($('#cover-rate4')[0]);
+    option = {
+        title: {
+            text: ''
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        legend: {
+            data: ['2011年', '2012年'],
+            textStyle:{
+                fontSize:15,
+                color:'#fff'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'value',
+            boundaryGap: [0, 0.01],
+            axisLine: {
+                lineStyle: {
+                    type: 'solid',
+                    color: '#ccc',//左边线的颜色
+                    width:'1'//坐标线的宽度
+                }
+            },
+            axisLabel: {
+                textStyle: {
+                    color: '#999',//坐标值得具体的颜色
+
+                }
+            }
+        },
+        yAxis: {
+            type: 'category',
+            data: ['万兴生姜','玉林鸭子','五福茶叶','松鹤黑猪','德州香肠'],
+            axisLine: {
+                lineStyle: {
+                    type: 'solid',
+                    color:'#ccc',
+                    width:'1'
+                }
+            },
+            axisLabel: {
+                textStyle: {
+                    color: '#999'
+                }
+            }
+        },
+        series: [
+            {
+                name: '2011年',
+                type: 'bar',
+                data: [18203, 23489, 29034, 104970, 131744],
+                itemStyle:{
+                    normal:{
+                        color:'#206194'
+                    }
+                },
+                label:{
+                    normal:{
+                        show: true,
+                        position: 'insideTop'}
+                }
+            },
+            {
+                name: '2012年',
+                type: 'bar',
+                data: [19325, 23438, 31000, 121594, 134141],
+                itemStyle:{
+                    normal:{
+                        color:'#AE6123'
+                    }
+                },
+                label:{
+                    normal:{
+                        show: true,
+                        position: 'insideTop'}
+                }
+            }
+        ]
+    };
+    zfirmChart4.setOption(option);
+
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        zfirmChart4.resize();
+    });
+    $(window).resize(function(){
+        zfirmChart4.resize();
+    });
+</script>
+</body>
+
+</html>

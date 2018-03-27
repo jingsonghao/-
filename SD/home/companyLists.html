@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>济宁企业</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/222.css">
+    <!--换肤-->
+</head>
+<body>
+<div class="d-wrap">
+    <div class="d-main">
+        <div class="d-main-right">
+            <div class="news-top">
+                <h3>追溯企业查询详情</h3>
+                <a href="./index.html"><span class="return" ></span></a>
+            </div>
+            <div class="news-table">
+                <div class="top">
+                    <h1>梁山宏源食品有限公司</h1>
+                </div>
+                <div class="companyImg clearfix">
+                    <div class="col-lg-4">
+                        <img src="img/ls.png" alt="" style="width: 500px;height: 202px;">
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="col-lg-6">注册号：913708325926444319	</p><p class="col-lg-6">	企业信用代码 ：91350900798381921K</p>
+                        <p class="col-lg-6">法定代表人：袁传吉 	</p><p class="col-lg-6">经营状态：开业</p>
+                        <p class="col-lg-6">成立日期2012-03-23</p><p class="col-lg-6">注册资本：980万(元)</p>
+                        <p class="col-lg-6">企业类型：有限责任公司(自然人投资或控股)</p>
+                        <p class="col-lg-12">所在地址：山梁山县韩垓镇开袁路石钟楼村南</p>
+                        <p class="col-lg-12">牛、羊、鸡、鸭屠宰、加工、分割、冷冻、销售，猪肉分割、冷冻、销售；生猪屠宰、加工、销售（有效期以许可证为准）；速冻肉制品生产、加工、销售（有效期以许可证为准）；普通货运、货物专用运输（有效期以许可证为准）。(依法须经批准的项目，经相关部门批准后方可开展经营活动)</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2>企业简介</h2>
+                    <p>
+                        山东梁山宏源食品有限公司市在梁山宏达屠宰厂的基础上改建而成的。梁山宏达定点屠宰厂始建于1998年，是济宁市最早的屠宰场之一。为适应时代的发展，人们生活的需求，于2012年3月改名为山东梁山宏源食品有限公司，该公司座落于石钟楼村南，西靠开袁路，北临S333道，交通十分畅通，现有固定资产980万元，专业屠宰加工技术人员120人，营销人员20人。
+
+                    </p>
+
+                    <p>
+                        企业业被山东省肉类协会授予“先进企业”；被济宁市流通业发展局授予“全市生猪屠宰先进企业”； 被中国食品工业协会评选为“全国食品工业优秀食品企业”；分别通过了GB/T22000-2006、GB/T27301-2008食品安全管理体系认证和GB/T 19001-2008—ISO 9001：2008质量管理体系认证。 
+                    </p>
+                    <p>
+                        公司占地26730㎡，其中屠宰车间3000㎡，分割车间600㎡，冷库400㎡，待宰圈1600㎡.本公司主要进行生猪屠宰、禽畜宰杀，肉品分割，冷藏完整产业链的肉食加工企业。
+
+                    </p>
+                    <p>
+                        公司采用全套不锈钢自动化流水线机械设备，整个厂区屠宰重点环节全程监控，设计年屠宰量为20万头。企业以“遵守食品法规、确保产品安全卫生；加强内外沟通、保证满足客户需求”为食品卫生安全方针。始终坚持以严谨高效的管理方法，先进科学的生产技术，规范严格的工艺纪律，准确可靠的质检设备，雄厚的技术力量，安全的质量品质，一流的开发人才，高素质的员工队伍，专业加工生产冷、鲜肉类食品，产品主要销往上海、南京、无锡、济南、苏州、杭州等，受到了国内外广大客商及消费者的一致好评。 
+                        展望未来，公司继续对肉狠抓管理，保证产品质量，以市场为导向，进一步拓宽销售渠道，使企业成长为具有强大生命力的新型屠宰加工企业。 
+                    </p>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jQuery文件 -->
+<script src="./js/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="./js/bootstrap.min.js"></script>
+<script>
+    function imgSrc() {
+        var list=$('.tracing-chain-list .tracing-chain-info');
+        list.each(function (index){
+            $(this).find('.tracing-icon').attr('src','./img/lineicon-'+(index+1)+".png");
+        });
+    }
+
+    $('.tracing-chain-list').on("click",function (){
+        $(this).addClass("active").siblings().removeClass("active");
+        $(this).prev().addClass("active");
+        imgSrc();
+        var _index=$(this).index()+1;
+        $(this).find('.tracing-icon').attr('src','./img/lineicon-'+_index+_index+".png");
+    })
+</script>
+
+</body>
+</html>

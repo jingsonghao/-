@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>组织权限管理</title>
+    <link href="../css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link type="text/css" href="../css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="../css/jquery-ui.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet" />
+    <link href="../css/table-style.css" rel="stylesheet" />
+    <link href="../css/table-title-box.css" rel="stylesheet" />
+    <link href="../css/pagination.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/search.css">
+    <script src="../js/jianrong/html5shiv.min.js"></script>
+    <script src="../js/jianrong/respond.min.js"></script>
+</head>
+
+<body class="index-content">
+<!--header-->
+<div class="navbar-box">
+    <div class="navbar">
+        <div class="container-nav">
+            <div class="header-top-border"></div>
+            <div class="header-l pull-left">
+                <img class="pull-left" src="../img/logo.png">
+                <div class="lw-title text-center pull-left">
+                    <h1>德州市重要产品追溯管理平台</h1>
+                    <span>Dezhou City, an important product traceability supervise platform</span>
+                </div>
+            </div>
+            <div class="header-r pull-right">
+                <div>
+                    您好！
+                    <span class="user-name">管理员</span>
+                    <a href="#">【系统管理】</a>
+                    <a>【用户退出】</a>
+                    <div class="lw-time text-right">12:00</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--header end-->
+<div class="sidebar">
+    <div class="sidebar-collapse">
+        <div class="navbar-actions">
+            <a href="javascript:void(0);" class="open-close-menu" id="main-menu-toggle"></a>
+        </div>
+        <div class="sidebar-menu">
+            <nav id="menu" role="navigation">
+                <ul class="nav nav-sidebar">
+                    <li class="nav-parent">
+                        <a>
+                            <i class="fa fa-hourglass-2" aria-hidden="true"></i><span>智慧农业</span>
+                        </a>
+                        <ul class="nav">
+                            <li class="nav-parent">
+                                <a href="n-index.html">
+                                    <i class="fa fa-laptop"></i><span>首页</span>
+                                </a>
+                            </li>
+                            <li class="nav-parent">
+                                <a>
+                                    <span>多维数据展示</span>
+                                </a>
+                                <ul>
+                                    <li><a href="page-activity.html"><span class="text"> 基地1</span></a></li>
+                                    <li><a><span class="text"> 基地2</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-parent">
+                                <a>
+                                    <span>多维数据展示</span>
+                                </a>
+                                <ul>
+                                    <li><a href="page-activity.html"><span class="text"> 基地1</span></a></li>
+                                    <li><a><span class="text"> 基地2</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="page-profile.html"><span class="text"> 历史数据查询</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent">
+                        <a>
+                            <i class="fa fa-cog" aria-hidden="true"></i><span>系统设置</span>
+                        </a>
+                        <ul class="nav">
+                            <li class="nav-parent">
+                                <a href="n-index.html">
+                                    <i class="fa fa-laptop"></i><span>首页</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chart-flot.html"><span class="text">采集标准库维护</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent">
+                        <a>
+                            <i class="fa fa-cog" aria-hidden="true"></i><span>系统设置</span>
+                        </a>
+                        <ul class="nav">
+                            <li class="nav-parent">
+                                <a href="n-index.html">
+                                    <i class="fa fa-laptop"></i><span>首页</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chart-flot.html"><span class="text">采集标准库维护</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <!--search 组件-->
+    <!--table 组件-->
+    <div class="shadow-boxs">
+        <div class="col-lg-12">
+            <!--表格标题部分-->
+            <div class="table-title-box">
+                <h3>权限管理</h3>
+            </div>
+            <div class="table-container">
+                <div class="thead-bg"></div>
+                <div class="col-xs-12 table-box">
+                    <table class="table table-condensed">
+                        <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>2017-05-07-15:30：00</td>
+                            <td>张三</td>
+                            <td>XXX超市</td>
+                            <td>xxx门店</td>
+                            <td>
+                                <a href="event-handling-report.html" class="edit">待处理</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>2017-06-07-10:30：00</td>
+                            <td>李四</td>
+                            <td>XXX超市</td>
+                            <td>xxx门店</td>
+                            <td>
+                                <a href="#" class="edit">待处理</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>2017-07-07-12:30：00</td>
+                            <td>小红</td>
+                            <td>XXX超市</td>
+                            <td>xxx门店</td>
+                            <td>
+                                <a href="#" class="edit">待处理</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>2017-06-26-9:30：00</td>
+                            <td>小明</td>
+                            <td>XXX超市</td>
+                            <td>xxx门店</td>
+                            <td>
+                                <a href="#" class="edit">待处理</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <nav aria-label="Page navigation" class="pull-right">
+                <ul class="pagination pagination-sm">
+                    <li class="previous disabled">
+                        <span aria-hidden="true">«</span>
+                    </li>
+                    <li class="active "><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li class="next">
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">»</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/my-calendar.js"></script>
+
+
+</body>
+
+</html>

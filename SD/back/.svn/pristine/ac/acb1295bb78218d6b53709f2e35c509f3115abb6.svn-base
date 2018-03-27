@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>生物生长环境信息采集系统</title>
+
+    <link href="../css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link type="text/css" href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet" />
+    <script src="../js/jianrong/html5shiv.min.js"></script>
+    <script src="../js/jianrong/respond.min.js"></script>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .question-bg{
+            position: relative;
+            width: 80%;
+            height: 80%;
+            background: url("../img/question-bg.jpg") no-repeat;
+            background-size: contain;
+        }
+        .question-form{
+            width: 300px;
+            height: 200px;
+            background-color: green;
+            position: absolute;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body class="index-content">
+<!--header-->
+<div class="navbar-box">
+    <div class="navbar">
+        <div class="container-nav">
+            <div class="header-top-border"></div>
+            <div class="header-l pull-left">
+                <img class="pull-left" src="../img/logo.png">
+                <div class="lw-title text-center pull-left">
+                    <h1>菏泽市重要产品追溯管理平台</h1>
+                    <span>The traceability management platform of important products in Heze</span>
+                </div>
+            </div>
+            <div class="header-r pull-right">
+                <div>
+                    您好！
+                    <span class="user-name">管理员</span>
+                    <a href="#">【系统管理】</a>
+                    <a href="../../home/index.html">【用户退出】</a>
+                    <div class="lw-time text-right">12:00</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--header end-->
+
+
+<!--导航菜单-->
+<div class="sidebar">
+    <div class="sidebar-collapse">
+        <div class="navbar-actions">
+            <a href="javascript:void(0);" class="open-close-menu" id="main-menu-toggle"></a>
+        </div>
+        <div class="sidebar-over-hidden">
+            <div class="sidebar-menu">
+                <nav id="menu" role="navigation">
+                    <ul class="nav nav-sidebar">
+                        <li>
+                            <a href="../traceBack/city-platform.html">
+                                <i class="fa fa-desktop" aria-hidden="true"></i><span>平台首页</span>
+                            </a>
+                        </li>
+                        <li class="nav-parent">
+                            <a>
+                                <i class="fa fa-gears (alias)" aria-hidden="true"></i><span>追溯管理系统</span>
+                            </a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="../traceBack/retrospect-manages.html">
+                                        <span>系统首页</span>
+                                    </a>
+                                </li>
+                                <li class="nav-parent">
+                                    <a>
+                                        <span>经营主体管理</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../traceBack/filling.html"><span class="text">信息备案管理</span></a>
+                                        </li>
+                                        <li><a href="../traceBack/file-statistics.html"><span class="text">备案信息统计</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a>
+                                        <span>追溯信息管理</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="../traceBack/Synthesis.html"><span class="text">追溯链条合成</span></a>
+                                        </li>
+                                        <li><a href="../traceBack/circulation.html"><span class="text">追溯信息查询</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../traceBack/run-report-manage.html">
+                                        <span>运行报告管理</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-parent">
+                            <a>
+                                <i class="fa fa-binoculars" aria-hidden="true"></i><span>监管辅助系统</span>
+                            </a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="../superviseHelp/supervise-assist.html">
+                                        <span>系统首页</span>
+                                    </a>
+                                </li>
+                                <li class="nav-parent">
+                                    <a><span class="text">工作考核管理</span></a>
+                                    <ul>
+                                        <li>
+                                            <a><span class="text">综合性考核</span></a>
+                                        </li>
+                                        <li>
+                                            <a><span class="text">考核指标管理</span></a>
+                                        </li>
+                                        <li>
+                                            <a><span class="text">考核指标类别管理</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a><span class="text">企业诚信管理</span></a>
+                                    <ul>
+                                        <li>
+                                            <a><span class="text">诚信行为记录</span></a>
+                                        </li>
+                                        <li>
+                                            <a><span class="text">信用档案管理</span></a>
+                                        </li>
+                                        <li>
+                                            <a><span class="text">黑名单管理</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a><span class="text">问题发现管理</span></a>
+                                    <ul>
+                                        <li>
+                                            <a><span class="text">问题项管理</span></a>
+                                        </li>
+                                        <li>
+                                            <a><span class="text">问题报告管理</span></a>
+                                        </li>
+                                        <li>
+                                            <a><span class="text">问题信息统计</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a><span class="text">应急事件管理</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="../superviseHelp/event-handling.html"><span class="text">应急事件处理</span></a>
+                                        </li>
+                                        <li>
+                                            <a><span class="text">应急事件记录</span></a>
+                                        </li>
+                                        <li>
+                                            <a><span class="text">应急预案管理</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a><span class="text">视频集中管理</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="../superviseHelp/video-manage.html"><span class="text">监控视频</span></a>
+                                        </li>
+                                        <li>
+                                            <a><span class="text">监控记录</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-parent">
+                                    <a><span class="text">设备管理</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="../superviseHelp/Stock11.html"><span class="text">设备库存管理</span></a>
+                                        </li>
+                                        <li>
+                                            <a><span class="text">设备调整管理</span></a>
+                                        </li>
+                                        <li>
+                                            <a><span class="text">设备维护管理</span></a>
+                                        </li>
+                                        <li>
+                                            <a><span class="text">设备监控</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-parent">
+                            <a>
+                                <i class="fa fa-barcode" aria-hidden="true"></i><span>赋码系统</span>
+                            </a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="../coding-system/unique-sys.html">
+                                        <span>系统首页</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a><span class="text">赋码审批管理</span></a>
+                                </li>
+                                <li>
+                                    <a><span class="text">赋码信息统计</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-parent">
+                            <a>
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i><span>大数据分析系统</span>
+                            </a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="../BigDataStatistics/big-data.html">
+                                        <span>系统首页</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a><span class="text">大数据报表分析</span></a>
+                                </li>
+                                <li>
+                                    <a><span class="text">大数据挖掘展示</span></a>
+                                </li>
+                                <li>
+                                    <a><span class="text">大数据审核监测</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--导航菜单 end-->
+
+
+<div class="main question-bg">
+    <div class="question-form">
+
+    </div>
+</div>
+
+
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+
+</html>

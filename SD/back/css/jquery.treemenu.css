@@ -1,0 +1,290 @@
+/*链条页 样式 css*/
+
+.a-color{
+    color: red;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{padding:0;}
+.m-lg{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row{
+    margin:0;
+}
+/*链条样式*/
+.tracing-chain{
+    padding-left: 46px;
+    padding-right: 46px;
+    padding-bottom: 80px;
+}
+.box{
+    position: relative;
+    width: 100%;
+    height:670px;
+    left: 0;
+    top: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 3px 3px #c2c2c2;
+}
+.chain-content{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    /*overflow: auto;*/
+}
+
+.tree {
+    position: relative;
+    top:70px;
+    color:#000;
+    width:100%;
+    z-index: 2;
+}
+/*....................line-begin*/
+.tree ul{
+    position: relative;
+    top: -8px;
+}
+.tree li {
+    list-style-type: none;
+    position: relative;
+    top: -14px;
+    min-height: 100px;
+}
+.tree li::before, .tree li::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    border-left: 4px solid #bfbfbf;
+    width:40px;
+    height: 100%;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.tree li::after{
+    top: 20px;
+    right:50%;
+    border-bottom: 4px solid #bfbfbf;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.tree li:nth-last-child(1)::before{
+    border-left: none;
+}
+
+/*变色*/
+.tree .lli::before, .tree .lli::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    border-left: 4px solid yellow;
+    height: 100%;
+}
+.tree .lli::after{
+    top: 20px;
+    right:50%;
+    border-bottom: 4px solid yellow;
+    z-index: 1;
+}
+.tree .lli2::before, .tree .lli2::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    border-left: 4px solid yellow;
+    height: 100%;
+}
+.tree .lli2::after{
+    top: 20px;
+    right:50%;
+}
+.tree .lli:nth-last-child(1)::before{
+    border-left: none;
+}
+.tree ul::before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: 100%;
+    border-bottom: 4px solid #bfbfbf;
+    width: 40px;
+    height: 0px;
+}
+.tree .uul::before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: 100%;
+    border-bottom: 4px solid yellow;
+    height: 0px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+/*js无法控制伪元素  所以用媒体查询 */
+@media screen and (min-width: 1366px) {
+    .tree ul::before{
+        width: 55px;
+    }
+    .tree li::before, .tree li::after{
+        width:55px;
+    }
+}
+@media screen and (min-width: 1766px) {
+    .tree ul::before{
+        width: 70px;
+    }
+    .tree li::before, .tree li::after{
+        width:70px;
+    }
+}
+
+/*去除第一个线*/
+.tree li:only-child::after, .tree li:only-child::before {
+    display: none;
+}
+.tree li:only-child{ padding-top: 0;}
+.tree li:first-child::before, .tree li:last-child::after{
+    border: none;
+}/*去除上下多余的线*/
+/*------------------------...................line-end*/
+
+.tree li,
+.tree li > b,
+.tree li > span {
+    padding: 4px;
+    border-radius: 4px;
+}
+.tree li b {
+    color:#fff;
+    text-decoration: none;
+    line-height: 20px;
+    border-radius: 4px;
+}
+.tree li b:hover {
+    color: #f7f7f7;
+}
+.tree li .explain{
+    display: none;
+    position: absolute;
+    top: 94px;
+    left: 84px;
+    width: 200px;
+    height: 130px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    border: 1px solid #3d3d3d;
+    z-index: 10;
+}
+.explain .r{
+    text-align: right;
+}
+.explain button{
+    outline:none;
+    color: red;
+    background-color: transparent;
+}
+.explain button:focus {
+    outline: 0;
+}
+.tree span{
+    position: relative;
+}
+.tree-icon{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 80px;
+    height: 100px;
+    padding-top: 50px;
+    background: url("../img/lineicon-1.png") no-repeat 50% 0%;
+    text-align: center;
+}
+.tree-icon1{
+    background: url("../img/lineicon-1.png") no-repeat 50% 0%;
+}
+.tree-icon11{
+    background: url("../img/lineicon-11.png") no-repeat 50% 0%;
+}
+.tree-icon2{
+    background: url("../img/lineicon-2.png") no-repeat 50% 0%;
+}
+.tree-icon22{
+    background: url("../img/lineicon-22.png") no-repeat 50% 0%;
+}
+.tree-icon3{
+    background: url("../img/lineicon-3.png") no-repeat 50% 0%;
+}
+.tree-icon33{
+    background: url("../img/lineicon-33.png") no-repeat 50% 0%;
+}
+.tree-icon4{
+    background: url("../img/lineicon-4.png") no-repeat 50% 0%;
+}
+.tree-icon44{
+    background: url("../img/lineicon-44.png") no-repeat 50% 0%;
+}
+.tree-icon5{
+    background: url("../img/lineicon-5.png") no-repeat 50% 0%;
+}
+.tree-icon55{
+    background: url("../img/lineicon-55.png") no-repeat 50% 0%;
+}
+.tree-icon6{
+    background: url("../img/lineicon-6.png") no-repeat 50% 0%;
+}
+.tree-icon66{
+    background: url("../img/lineicon-66.png") no-repeat 50% 0%;
+}
+/*----------------- 配合treemenu.js的 点击添加-------------------*/
+.treemenu li {
+    list-style: none;
+    padding: 0;
+}
+
+/*bg*滚动条*/
+::-webkit-scrollbar{
+    width: 0px;
+}
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.bg>div{
+    height: 100%;
+    /*background-color: #fff;*/
+}
+.bg>div:nth-child(even){
+    /*background-color: #f1f1f1;*/
+}
+.bg .tree-top{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(71,190,252,0.25);
+    text-align: center;
+    color: #fff;
+    z-index: 8;
+}
+
+
+.m-modal-footer{
+    border-top:none;
+}
+/*===============================================*/

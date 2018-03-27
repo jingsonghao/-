@@ -1,0 +1,17 @@
+﻿
+【追溯管理系统】:【traceBack文件夹】：
+run-report-manage.html       运行报告管理
+run-report-create.html       运行报告生成
+
+【后台管理系统】:【BackgroundManagementSystem文件夹】：
+information-publish.html     信息发布
+info-pub-add.html            信息发布新增
+info-pub-service.html        信息发布维护
+premium-company.html         追溯企业
+public-mess-back.html        公众留言反馈
+e-commerce-links.html        电商连接
+
+【追溯系统】:【superviseHelp文件夹】：
+problem-report-create.html   问题报告生成
+video-manage                 视频监控
+problem-report-manage.html   问题报告管理

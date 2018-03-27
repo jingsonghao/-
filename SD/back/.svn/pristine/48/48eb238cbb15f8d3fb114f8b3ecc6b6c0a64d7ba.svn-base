@@ -1,0 +1,28 @@
+﻿【BigDataStatistic文件夹】：大数据分析系统   ok
+big-data.html                首页
+big-data-analysis.html       大数据分析
+big-data-excavate-show.html  大数据挖掘展示
+caijishenghe.html            大数据审核检测
+
+
+【traceBack文件夹】：
+file-statistics.html      备案信息统计  0
+retrospect-manages.html   追溯系统首页  0
+supervise-assist.html     监管辅助首页 0
+unique-sys.html           赋码系统首页
+video-manage.html         监控视频 0
+
+
+
+【BackgroundManagementSystem文件夹】
+Log-Settings-manage.html        日志设置项管理 ---新增
+system-run-log.html             系统运行日志 ---新增
+user-operation-log.html         用户操作日志 ---新增
+jurisdiction-manage.html        权限管理 ---新增
+
+【coding-system文件夹 】
+message-statistics.html       赋码信息系统----新增
+
+【superviseHelp 文件夹】
+tongjifengxi.html             问题信息统计---新增
+

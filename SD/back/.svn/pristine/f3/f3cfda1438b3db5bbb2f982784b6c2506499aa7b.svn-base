@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8" />
+		<title>生物生长环境信息采集系统</title>
+
+		<link href="../css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+		<link type="text/css" href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/common.css" rel="stylesheet" />
+		<link href="../css/table-style.css" rel="stylesheet" />
+		<link href="../css/pagination.css" rel="stylesheet" />
+		<script src="../js/jianrong/html5shiv.min.js"></script>
+		<script src="../js/jianrong/respond.min.js"></script>
+
+	</head>
+
+	<body class="index-content">
+	<!--header-->
+	<div class="navbar-box">
+		<div class="navbar">
+			<div class="container-nav">
+				<div class="header-top-border"></div>
+                <div class="header-l pull-left">
+                    <img class="pull-left" src="../img/logo.png">
+                    <div class="lw-title text-center pull-left">
+                        <h1>莱芜市重要产品追溯管理平台</h1>
+                        <span>Laiwu City, an important product traceability supervise platform</span>
+                    </div>
+                </div>
+                <div class="header-r pull-right">
+                    <div>
+                        您好！
+                        <span class="user-name">管理员</span>
+                        <a href="#">【系统管理】</a>
+                        <a>【用户退出】</a>
+                        <div class="lw-time text-right">12:00</div>
+
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+	<!--header end-->
+
+	<div class="sidebar">
+		<div class="sidebar-collapse">
+			<div class="navbar-actions">
+				<a href="javascript:void(0);" class="open-close-menu" id="main-menu-toggle"></a>
+			</div>
+			<div class="sidebar-menu">
+				<nav id="menu" role="navigation">
+					<ul class="nav nav-sidebar">
+						<li class="nav-parent">
+							<a>
+								<i class="fa fa-hourglass-2" aria-hidden="true"></i><span>智慧农业</span>
+							</a>
+							<ul class="nav">
+								<li>
+									<a href="n-index.html">
+										<i class="fa fa-laptop"></i><span>首页</span>
+									</a>
+								</li>
+								<li class="nav-parent">
+									<a>
+										<span>多维数据展示</span>
+									</a>
+									<ul>
+										<li><a href="page-activity.html"><span> 基地1</span></a></li>
+										<li><a><span> 基地2</span></a></li>
+									</ul>
+								</li>
+								<li class="nav-parent">
+									<a>
+										<span>多维数据展示</span>
+									</a>
+									<ul>
+										<li><a href="page-activity.html"><span> 基地1</span></a></li>
+										<li><a><span> 基地2</span></a></li>
+									</ul>
+								</li>
+								<li><a href="page-profile.html"><span> 历史数据查询</span></a></li>
+							</ul>
+						</li>
+						<li class="nav-parent">
+							<a>
+								<i class="fa fa-cog" aria-hidden="true"></i><span>系统设置</span>
+							</a>
+							<ul class="nav">
+								<li>
+									<a href="n-index.html">
+										<i class="fa fa-laptop"></i><span>首页</span>
+									</a>
+								</li>
+								<li>
+									<a href="chart-flot.html"><span>采集标准库维护</span></a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-parent">
+							<a>
+								<i class="fa fa-cog" aria-hidden="true"></i><span>系统设置</span>
+							</a>
+							<ul class="nav">
+								<li>
+									<a href="n-index.html">
+										<i class="fa fa-laptop"></i><span>首页</span>
+									</a>
+								</li>
+								<li>
+									<a href="chart-flot.html"><span>采集标准库维护</span></a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="col-lg-4">
+			<div class="shadow-boxs">
+				<div class="col-lg-12">
+					<div class="table-container">
+						<div class="thead-bg"></div>
+						<div class="col-xs-12 table-box">
+							<table class="table table-condensed">
+								<thead>
+								<tr>
+									<th>序号</th>
+									<th>发布人</th>
+									<th>推送方式</th>
+									<th>发布时间</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>01</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>02</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>03</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>04</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="shadow-boxs">
+				<div class="col-lg-12">
+					<div class="table-container">
+						<div class="thead-bg"></div>
+						<div class="col-xs-12 table-box">
+							<table class="table table-condensed">
+								<thead>
+								<tr>
+									<th>序号</th>
+									<th>发布人</th>
+									<th>推送方式</th>
+									<th>发布时间</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>01</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>02</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>03</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>04</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="shadow-boxs">
+				<div class="col-lg-12">
+					<div class="table-container">
+						<div class="thead-bg"></div>
+						<div class="col-xs-12 table-box">
+							<table class="table table-condensed">
+								<thead>
+								<tr>
+									<th>序号</th>
+									<th>发布人</th>
+									<th>推送方式</th>
+									<th>发布时间</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>01</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>02</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>03</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>04</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>02</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>03</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>04</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+					<nav aria-label="Page navigation" class="pull-right">
+						<ul class="pagination pagination-sm">
+							<li class="previous disabled">
+								<span aria-hidden="true">«</span>
+							</li>
+							<li class="active "><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li class="next">
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">»</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="shadow-boxs">
+				<div class="col-lg-12">
+					<div class="table-container">
+						<div class="thead-bg"></div>
+						<div class="col-xs-12 table-box">
+							<table class="table table-condensed">
+								<thead>
+								<tr>
+									<th>序号</th>
+									<th>发布人</th>
+									<th>推送方式</th>
+									<th>发布时间</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>01</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>02</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>03</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>04</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="shadow-boxs">
+				<div class="col-lg-12">
+					<div class="table-container">
+						<div class="thead-bg"></div>
+						<div class="col-xs-12 table-box">
+							<table class="table table-condensed">
+								<thead>
+								<tr>
+									<th>序号</th>
+									<th>发布人</th>
+									<th>推送方式</th>
+									<th>发布时间</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>01</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>02</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>03</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								<tr>
+									<td>04</td>
+									<td>李田</td>
+									<td>邮件</td>
+									<td>2017-03-16 08:19</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="../js/jquery-1.11.2.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/common.js"></script>
+
+	</body>
+
+</html>

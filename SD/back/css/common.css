@@ -1,0 +1,365 @@
+﻿html, body {
+    width: 100%;
+}
+html {
+    font-size: 14px;
+    height: 100%;
+}
+body {
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: url(../img/bg-map.png) #020c15 no-repeat fixed;
+    background-size: cover;
+    min-height: 100%;
+}
+h1,h2,h3,h4,h5{
+    padding: 0;
+    margin: 0;
+}
+a{
+    cursor: pointer;
+    color: #fff;
+}
+a:hover, a:focus {
+    color: #2da0bd;
+    text-decoration: none;
+}
+a:active {
+    color: #2da0bd;
+    text-decoration: none;
+}
+ul, ol {
+    padding: 0;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+/*按钮*/
+.btn-reset{
+    padding: 0px 18px;
+    background-color: #c6a64b;
+    color: #fff;
+    /*兼容（ie）*/
+    /*width: 70px;*/
+}
+.btn-reset1{
+    padding: 0px 18px;
+    background-color: #d43f3a;
+    color: #fff;
+}
+.btn-search{
+    padding: 0px 18px;
+    background-color: #285867;
+    color: #fff;
+    /*兼容（ie）*/
+    /*width: 70px;*/
+}
+/*按钮 end*/
+
+/*输入框背景色*/
+.form-control-content .form-control{
+    background-color: rgba(40,88,103,0.5);
+    border-color: #1b3943;
+    color: #fff;
+}
+/*输入框背景色 end*/
+
+/*弹窗背景色*/
+.modal-content{
+    background-color: #062b34;
+}
+/*弹窗背景色 end*/
+
+/*header*/
+.navbar-box{
+   height: 150px;
+}
+.navbar-box:after{
+    position: fixed;
+    content: ' ';
+    width: 100%;
+    height: 130px;
+    background-color: #020c15;
+    z-index: 100;
+}
+.navbar {
+    position: fixed;
+    margin: 0 auto;
+    top: 10px;
+    left:0;
+    right: 0;
+    width: 98%;
+    height: 120px;
+    border: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #0e1a24 !important;
+    z-index: 1048;
+    overflow: hidden;
+}
+
+.navbar .header-top-border{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 8px;
+    background-image: url("../img/head-border.png");
+    background-size: 100% 8px;
+}
+.navbar .header-l{
+    margin-left: 1.5%;
+}
+.navbar .lw-title{
+    margin-left: 20px;
+}
+.navbar .header-l img{
+    margin-top: -3px;
+}
+.navbar .lw-title h1{
+    font-size: 34px;
+    color: #00ffff;
+    line-height: 56px;
+    border-bottom: 1px solid #9fa3a7;
+}
+.navbar .lw-title span{
+    font-size: 14px;
+    color: #00ffff;
+    line-height: 28px;
+}
+.navbar .header-r{
+    margin-right: 1.5%;
+}
+.navbar .header-r .lw-time{
+    font-size: 50px;
+    color: #2da0bd;
+    line-height: 70px;
+}
+.navbar .header-r span.user-name{
+    color: #f1ff93;
+}
+
+.navbar .header-r a{
+    color: #2da0bd;
+}
+/*header end*/
+
+/* 左侧导航
+=================================================================== */
+.sidebar {
+    position: fixed;
+    top: 150px;
+    left: -376px;
+    height: 100%;
+    width: 378px;
+    z-index: 9999;
+    background-color: rgba(28,37,45,1);
+    border: 1px solid #49555d;
+    border-radius: 6px;
+    box-shadow: 0 0 100px rgba(0,0,0,.7) inset, 0 0 100px rgba(0,0,0,.5);
+    transition: left 0.2s ease;
+    -moz-transition: left 0.2s ease;
+    -webkit-transition: left 0.2s ease;
+    -o-transition: left 0.2s ease;
+}
+.sidebar .navbar-actions {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    margin-top: -35px;
+    font-size: 20px;
+}
+.sidebar .navbar-actions a {
+    color: #c8c8c8;
+    border-left: none;
+}
+.sidebar .navbar-actions .open-close-menu {
+    display: inline-block;
+    border: none !important;
+    width: 14px;
+    height: 69px;
+}
+.sidebar.sidebar-hidel{
+    left: 1%;
+}
+.sidebar .open-close-menu{
+    background: url("../img/nav_arrow.png") 0 -69px no-repeat;
+}
+.sidebar.sidebar-hidel .open-close-menu{
+    background: url("../img/nav_arrow.png") 0 0 no-repeat;
+}
+
+.sidebar .sidebar-collapse{
+    position: relative;
+}
+
+.sidebar a{
+    color: #fff;
+}
+.sidebar .sidebar-header {
+    height: 60px;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    background: #192833;
+}
+.sidebar .sidebar-over-hidden{
+    width: 344px;
+    margin-left: 15px;
+    overflow: hidden;
+}
+.sidebar .sidebar-menu {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 376px;
+}
+.sidebar-menu .bk-avatar{
+    padding: 20px;
+    text-align: center;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    background-color: transparent;
+    border-color: #004781;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+.sidebar ul.nav.nav-sidebar {
+    margin: 0;
+    padding: 23px 0;
+    width: 100%;
+}
+.sidebar ul.nav.nav-sidebar li:hover {
+    color: #fff;
+}
+.sidebar ul.nav.nav-sidebar li.active,
+.sidebar ul.nav.nav-sidebar ul.active a,
+.sidebar ul.nav.nav-sidebar li.active a,
+.sidebar ul.nav.nav-sidebar ul>ul{
+    display: block;
+}
+.sidebar ul.nav.nav-sidebar ul.opened>ul{
+    display: block;
+}
+.sidebar ul.nav.nav-sidebar li a.active {
+    background: none;
+    color: #fff;
+}
+.sidebar ul.nav.nav-sidebar li a:hover {
+   background-color: #938042;
+    color: #fff;
+}
+.sidebar ul.nav.nav-sidebar > li > a {
+    padding: 15px 25px;
+}
+.sidebar ul.nav.nav-sidebar > li > a:hover, ul.nav-sidebar > li > a:focus {
+    background-color: transparent;
+}
+
+.sidebar ul.nav.nav-sidebar li span {
+    vertical-align: middle;
+}
+
+.sidebar ul.nav.nav-sidebar li i {
+    font-size: 16px;
+    color: #275362;
+    width: 1.1em;
+    margin-right: 0.5em;
+    text-align: center;
+    vertical-align: middle;
+}
+.sidebar ul.nav.nav-sidebar li.nav-parent {
+    position: relative;
+}
+.sidebar ul.nav.nav-sidebar li.nav-parent > a {
+    cursor: pointer;
+}
+.sidebar ul.nav.nav-sidebar li.nav-parent > a:after {
+    font-family: 'FontAwesome';
+    color: #00ffff;
+    content: '\f107';
+    padding: 0 42px 10px 0;
+    margin-top: -12px;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    top:50%;
+}
+
+.sidebar ul.nav.nav-sidebar li.nav-parent.opened > a:after {
+    content: '\f106';
+    color: #a78b3f;
+}
+
+.sidebar ul.nav.nav-sidebar li .nav-children li a {
+    padding: 9px 15px 9px 68px;
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar ul.nav.nav-sidebar li li.active > a {
+    color: #435D78;
+}
+.sidebar ul.nav.nav-sidebar li ul {
+    display: none;
+}
+.sidebar ul.nav.nav-sidebar>li>ul {
+    display: none;
+}
+.sidebar ul.nav.nav-sidebar>li>ul>li>a {
+    padding: 12px 15px 12px 58px;
+}
+
+.sidebar ul.nav.nav-sidebar li ul li ul li a  {
+    display: block;
+    padding:10px 5px 10px 86px;
+    text-decoration: none;
+}
+/* 左侧导航 end
+=================================================================== */
+
+/*内容盒子*/
+.main{
+    margin:0 auto 0;
+    width: 98%;
+}
+/*内容盒子 end*/
+
+/*半透明盒子*/
+.shadow-boxs {
+    margin-bottom: 30px;
+    color: #fff;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid #49555d;
+    border-radius: 6px;
+    box-shadow: 0 0 100px rgba(0,0,0,.7) inset, 0 0 100px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+/*半透明盒子 end*/
+/*模态框里面的 x*/
+.modal-header button.close{
+    margin: 0px 8px;
+    color: #fff;
+    opacity: 1;
+    text-shadow: none;
+}
+
+/*省级三级联动*/
+.form-control-col {
+    width: 30%;
+    display: inline-block;
+    margin: 0 !important;
+}
+.header-l img{
+	width: 80px;
+	height: 80px;
+}
