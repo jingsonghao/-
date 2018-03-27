@@ -1,0 +1,146 @@
+
+/*search  顶部搜索样式 */
+/* search */
+.r-search{
+    padding-bottom:10px;
+    overflow: hidden;
+    border-left: 4px solid #107cb7;
+}
+label{
+    margin-bottom: 0;
+}
+.r-search .form{
+    position: relative;
+    line-height: 38px;
+    margin-top: 10px;
+    margin-left: 46px;
+    margin-right: 48px;
+    border-radius: 5px;
+    padding-left: 32px;
+    overflow: hidden;
+}
+.r-search .form input[type="text"]{
+    height: 23px;
+    font-size: 14px;
+}
+
+.r-search .form .search-01{
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 23px;
+    margin-left: 6px;
+    margin-right: 18px;
+    /*background-color: #285867;*/
+    /*border-color: #1b3943;*/
+    /*color: #a1a1a1;*/
+}
+.search-02 {
+    width: 90px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 23px;
+    margin-left: 6px;
+    margin-right: 18px;
+    /*background-color: #285867;*/
+    /*border-color: #1b3943;*/
+    /*color: #fff;*/
+    float: right;
+    margin-top: 20px;
+}
+
+.search-03 {
+    width: 15px;
+    height: 15px;
+    margin-left: 15px !important;
+    border-radius: 50%;
+}
+.search-label {
+    font-size: 20px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.r-search .form .plantTime{
+    width: 110px;
+    border-radius: 3px;
+    margin-right: 0px;
+    /*background-color: #285867;*/
+    /*border-color: #1b3943;*/
+    /*color: #fff;*/
+}
+/*搜索框 小箭头*/
+.search-right{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 12px;
+    height: 12px;
+    background: url("../img/search-right.png") no-repeat;
+    z-index: 3;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+}
+.search-right2{
+    top:10px;
+}
+/*左箭头*/
+.ui-datepicker-prev{
+    background: url("../img/page_left.png") no-repeat center center;
+}
+/*右箭头*/
+.ui-datepicker-next{
+    background: url("../img/page_right.png") no-repeat center center;
+
+}
+
+.my-group{
+    float: right;
+    margin-right: 5px;
+}
+/*button*/
+.r-search .form .btn-reset{
+    padding: 0px 18px;
+    border: 1px solid #0c81f8;
+    background-color: #fff;
+    color: #0c81f8;
+    /*兼容（ie）*/
+    /*width: 70px;*/
+}
+/*按钮样式建议写  commin 里面*/
+.r-search .form .btn-search2{
+    padding: 0px 18px;
+    color: #fff;
+    /*!*兼容（ie）*!*/
+    /*width: 70px;*/
+}
+.r-search  .form .btn-my-add{
+    padding: 0px 18px;
+    color: #fff;
+    /*!*兼容（ie）*!*/
+    /*width: 70px;*/
+}
+.r-search  .form .btn-reset1{
+    padding: 0px 18px;
+    border: 1px solid #0c81f8;
+    background-color: #fff;
+    color: #0c81f8;
+    /*!*兼容（ie）*!*/
+    /*width: 70px;*/
+}
+.r-search  .form .btn-reset2{
+    padding: 0px 18px;
+    border: 1px solid #0c81f8;
+    background-color: #fff;
+    color: #fff;
+    /*!*兼容（ie）*!*/
+    /*width: 70px;*/
+}
+.r-search .form-r-no{
+    margin-right: 0;
+}
+.r-search .el-input__inner {
+  height: 24px !important;
+}
+

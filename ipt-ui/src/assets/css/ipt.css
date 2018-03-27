@@ -1,0 +1,72 @@
+.sum {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+.flr {
+  float: right;
+}
+.sum img {
+  margin-left: 15px;
+}
+
+.construction-rate {
+  float: right;
+  margin-top: -25px;
+  font-size: 12px;
+}
+
+.con-rate {
+  font-size: 30px;
+  color: #b36924;
+}
+
+/*进度条*/
+.m-progress {
+  margin-top: 40px;
+  color: #000;
+}
+
+.m-progress .progress {
+  height: 20px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, .075);
+  border-radius: 4px;
+  padding: 0;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.btn-default-a {
+  color: #000;
+  background-color: rgba(0, 0, 0, .075);
+  border-color: #ccc;
+}
+
+.el-input__inner {
+  height: 34px !important;
+  border: 1px solid #ccc !important;
+}
+
+.el-input__inner:focus {
+  border-color: #66afe9 !important;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.amap-logo {
+  display: none !important;
+}
+
+.amap-copyright {
+  display: none !important;
+}

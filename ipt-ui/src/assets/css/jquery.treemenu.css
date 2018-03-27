@@ -1,0 +1,392 @@
+/*链条页 样式 css*/
+
+.tracing-chain .a-color {
+  color: red;
+}
+
+.tracing-chain .col-lg-1,
+.tracing-chain .col-lg-10,
+.tracing-chain .col-lg-11,
+.tracing-chain .col-lg-12,
+.tracing-chain .col-lg-2,
+.tracing-chain .col-lg-3,
+.tracing-chain .col-lg-4,
+.tracing-chain .col-lg-5,
+.tracing-chain .col-lg-6,
+.tracing-chain .col-lg-7,
+.tracing-chain .col-lg-8,
+.tracing-chain .col-lg-9,
+.tracing-chain .col-md-1,
+.tracing-chain .col-md-10,
+.tracing-chain .col-md-11,
+.tracing-chain .col-md-12,
+.tracing-chain .col-md-2,
+.tracing-chain .col-md-3,
+.tracing-chain .col-md-4,
+.tracing-chain .col-md-5,
+.tracing-chain .col-md-6,
+.tracing-chain .col-md-7,
+.tracing-chain .col-md-8,
+.tracing-chain .col-md-9,
+.tracing-chain .col-sm-1,
+.tracing-chain .col-sm-10,
+.tracing-chain .col-sm-11,
+.tracing-chain .col-sm-12,
+.tracing-chain .col-sm-2,
+.tracing-chain .col-sm-3,
+.tracing-chain .col-sm-4,
+.tracing-chain .col-sm-5,
+.tracing-chain .col-sm-6,
+.tracing-chain .col-sm-7,
+.tracing-chain .col-sm-8,
+.tracing-chain .col-sm-9,
+.tracing-chain .col-xs-1,
+.tracing-chain .col-xs-10,
+.tracing-chain .col-xs-11,
+.tracing-chain .col-xs-12,
+.tracing-chain .col-xs-2,
+.tracing-chain .col-xs-3,
+.tracing-chain .col-xs-4,
+.tracing-chain .col-xs-5,
+.tracing-chain .col-xs-6,
+.tracing-chain .col-xs-7,
+.tracing-chain .col-xs-8,
+.tracing-chain .col-xs-9 {
+  padding: 0 !important;
+}
+
+.tracing-chain .m-lg {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.tracing-chain .row {
+  margin: 0;
+}
+
+/*链条样式*/
+.tracing-chain {
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-bottom: 80px;
+}
+
+.tracing-chain .box {
+  position: relative;
+  width: 100%;
+  height: 670px;
+  left: 0;
+  top: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0px 3px 3px #c2c2c2;
+}
+
+.tracing-chain .chain-content {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  /*overflow: auto;*/
+}
+
+.tracing-chain .tree {
+  position: relative;
+  top: 70px;
+  color: #000;
+  width: 100%;
+  z-index: 2;
+}
+
+/*....................line-begin*/
+.tracing-chain .tree ul {
+  position: relative;
+  top: -8px;
+}
+
+.tracing-chain .tree li {
+  list-style-type: none;
+  position: relative;
+  top: -14px;
+  min-height: 100px;
+}
+
+.tracing-chain .tree li::before, .tracing-chain .tree li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 4px solid #bfbfbf;
+  width: 40px;
+  height: 100%;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.tracing-chain .tree li::after {
+  top: 20px;
+  right: 50%;
+  border-bottom: 4px solid #bfbfbf;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.tracing-chain .tree li:nth-last-child(1)::before {
+  border-left: none;
+}
+
+/*变色*/
+.tracing-chain .tree .lli::before, .tracing-chain .tree .lli::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 4px solid #0c6492;
+  height: 100%;
+}
+
+.tracing-chain .tree .lli::after {
+  top: 20px;
+  right: 50%;
+  border-bottom: 4px solid #0c6492;
+  z-index: 1;
+}
+
+.tracing-chain .tree .lli2::before, .tracing-chain .tree .lli2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 4px solid #0c6492;
+  height: 100%;
+}
+
+.tracing-chain .tree .lli2::after {
+  top: 20px;
+  right: 50%;
+}
+
+.tracing-chain .tree .lli:nth-last-child(1)::before {
+  border-left: none;
+}
+
+.tracing-chain .tree ul::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: 100%;
+  border-bottom: 4px solid #bfbfbf;
+  width: 40px;
+  height: 0px;
+}
+
+.tracing-chain .tree .uul::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: 100%;
+  border-bottom: 4px solid #0c6492;
+  height: 0px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+/*js无法控制伪元素  所以用媒体查询 */
+@media screen and (min-width: 1366px) {
+  .tracing-chain .tree ul::before {
+    width: 55px;
+  }
+
+  .tracing-chain .tree li::before, .tracing-chain .tree li::after {
+    width: 55px;
+  }
+}
+
+@media screen and (min-width: 1766px) {
+  .tracing-chain .tree ul::before {
+    width: 70px;
+  }
+
+  .tracing-chain .tree li::before, .tracing-chain .tree li::after {
+    width: 70px;
+  }
+}
+
+/*去除第一个线*/
+.tracing-chain .tree li:only-child::after, .tracing-chain .tree li:only-child::before {
+  display: none;
+}
+
+.tracing-chain .tree li:only-child {
+  padding-top: 0;
+}
+
+.tracing-chain .tree li:first-child::before, .tracing-chain .tree li:last-child::after {
+  border: none;
+}
+
+/*去除上下多余的线*/
+/*------------------------...................line-end*/
+
+.tracing-chain .tree li,
+.tracing-chain .tree li > b,
+.tracing-chain .tree li > span {
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.tracing-chain .tree li b {
+  color: #fff;
+  text-decoration: none;
+  line-height: 20px;
+  border-radius: 4px;
+}
+.tracing-chain .tree li b i{
+  font-style: normal;
+}
+.tracing-chain .tree li b:hover {
+  color: #f7f7f7;
+}
+
+.tracing-chain .tree li .explain {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  width: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  border: 1px solid #3d3d3d;
+  z-index: 10;
+}
+
+.tracing-chain .explain .r {
+  text-align: right;
+}
+
+.tracing-chain .explain button {
+  outline: none;
+  color: red;
+  background-color: transparent;
+}
+
+.tracing-chain .explain button:focus {
+  outline: 0;
+}
+
+.tracing-chain .tree span {
+  position: relative;
+}
+
+.tracing-chain .tree-icon {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 80px;
+  height: 100px;
+  padding-top: 50px;
+  background: url("/static/img/lineicon-1.png") no-repeat 50% 0%;
+  text-align: center;
+}
+
+.tracing-chain .tree-icon1 {
+  background: url("/static/img/lineicon-1.png") no-repeat 50% 0%;
+}
+
+.tracing-chain .tree-icon11 {
+  background: url("/static/img/lineicon-11.png") no-repeat 50% 0%;
+}
+
+.tracing-chain .tree-icon2 {
+  background: url("/static/img/lineicon-2.png") no-repeat 50% 0%;
+}
+
+.tracing-chain .tree-icon22 {
+  background: url("/static/img/lineicon-22.png") no-repeat 50% 0%;
+}
+
+.tracing-chain .tree-icon3 {
+  background: url("/static/img/lineicon-3.png") no-repeat 50% 0%;
+}
+
+.tracing-chain .tree-icon33 {
+  background: url("/static/img/lineicon-33.png") no-repeat 50% 0%;
+}
+
+.tracing-chain .tree-icon4 {
+  background: url("/static/img/lineicon-4.png") no-repeat 50% 0%;
+}
+
+.tracing-chain .tree-icon44 {
+  background: url("/static/img/lineicon-44.png") no-repeat 50% 0%;
+}
+
+.tracing-chain .tree-icon5 {
+  background: url("/static/img/lineicon-5.png") no-repeat 50% 0%;
+}
+
+.tracing-chain .tree-icon55 {
+  background: url("/static/img/lineicon-55.png") no-repeat 50% 0%;
+}
+
+.tracing-chain .tree-icon6 {
+  background: url("/static/img/lineicon-6.png") no-repeat 50% 0%;
+}
+
+.tracing-chain .tree-icon66 {
+  background: url("/static/img/lineicon-66.png") no-repeat 50% 0%;
+}
+
+/*----------------- 配合treemenu.js的 点击添加-------------------*/
+.tracing-chain .treemenu li {
+  list-style: none;
+  padding: 0;
+}
+
+/*bg*滚动条*/
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.tracing-chain .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tracing-chain .bg > div {
+  height: 100%;
+  background-color: #fff;
+}
+
+.tracing-chain .bg > div:nth-child(even) {
+  background-color: #dcf6ff;
+}
+
+.tracing-chain .bg .tree-top {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #4fbddd;
+  text-align: center;
+  color: #fff;
+  z-index: 8;
+}
+
+.tracing-chain .m-modal-footer {
+  border-top: none;
+}
+
+/*===============================================*/

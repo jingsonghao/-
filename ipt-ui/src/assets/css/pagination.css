@@ -1,0 +1,24 @@
+/*分页*/
+.pagination{
+    margin: 10px 0;
+}
+.pagination>li>a, .pagination>li>span{
+    padding: 3px 10px;
+    font-size: 15px;
+    background-color: transparent;
+    color: #000;
+    border: none;
+}
+.pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover{
+    background-color: #0c81f8;
+    color: #fff;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    background-color: transparent;
+    color: #42b5ee;
+}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover{
+    color: #42b5ee;
+    background-color: rgba(71,190,252,0.2);
+}
+/*分页 end*/

@@ -1,0 +1,35 @@
+/*table 标题*/
+.table-title-box h3{
+    display: inline-block;
+    line-height: 70px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.tool-btn-box{
+    margin-top: 24px;
+}
+.tool-btn-box li{
+    float: left;
+    margin-left: 15px;
+}
+.tool-btn-box li a{
+    width:27px;
+    height: 27px;
+    display: block;
+}
+.delete-btn{
+    background: url("../img/delete.png") no-repeat;
+}
+.return-btn{
+    background: url("../img/return.png") no-repeat;
+}
+.group-add-btn{
+    background: url("../img/group.png") no-repeat;
+}
+.user-add-btn{
+    background: url("../img/add.png") no-repeat;
+}
+.batch-add-btn{
+    background: url("../img/batch-add.png") no-repeat;
+}
+/*table 标题*/

@@ -1,0 +1,113 @@
+.sum {
+  position: relative;
+  padding: 11px 20px 11px 30px;
+  font-size: 16px;
+  border-bottom: 1px solid #a9a9a9;
+}
+.sum:before{
+  content: " ";
+  display: block;
+  width: 4px;
+  height: 18px;
+  border-radius: 2px;
+  background-color: #00a0e8;
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  margin-top: -9px;
+}
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+.flr {
+  float: right;
+}
+.sum img {
+  margin-left: 15px;
+}
+
+.construction-rate {
+  /*float: right;*/
+  /*margin-top: -25px;*/
+  margin-top: 5px;
+  margin-left: 15px;
+  font-size: 12px;
+}
+.zwrites {
+  margin-top: 15px;
+  background: url("../img/blues.png") no-repeat 15%;
+  height: 62px;
+  line-height: 62px;
+  text-align: left;
+  text-indent: 50px;
+}
+.zreals {
+  background: url("../img/greens.png") no-repeat 15%;
+}
+.zblues {
+  background: url("../img/reds.png") no-repeat 15%;
+}
+
+.con-rate {
+  font-size: 30px;
+  text-align: center;
+  color: rgb(41,61,42);
+  width: 300px;
+  display: inline-block;
+  border: 1px solid #333;
+  border-radius: 3px;
+  background-color: rgb(167,207,147);
+}
+.con-rate-write {
+  float: right;
+  width: 150px;
+  font-size: 30px;
+  display: inline-block;
+  background-color: #fff;
+}
+/*进度条*/
+.m-progress {
+  margin-top: 40px;
+  color: #000;
+}
+
+.m-progress .progress {
+  height: 20px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, .075);
+  border-radius: 4px;
+  padding: 0;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.btn-default-a {
+  color: #000;
+  background-color: rgba(0, 0, 0, .075);
+  border-color: #ccc;
+}
+
+.el-input__inner {
+  height: 34px !important;
+  border: 1px solid #ccc !important;
+}
+
+.el-input__inner:focus {
+  border-color: #66afe9 !important;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.amap-logo {
+  display: none !important;
+}
+
+.amap-copyright {
+  display: none !important;
+}

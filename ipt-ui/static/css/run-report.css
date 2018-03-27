@@ -1,0 +1,56 @@
+/*运行报告*/
+.report-content{
+    padding: 40px 35px 20px 35px;
+    overflow: hidden;
+}
+.report-content .label-title{
+    float: left;
+    width: 150px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.report-content .form-control{
+    width: 400px;
+}
+@media only screen and (max-width: 1400px){
+    .content-j .form-group {
+        width: 100%;
+    }
+}
+.choose-personnel input{
+    display: inline-block;
+}
+.choice-btn{
+    vertical-align: middle;
+    display: inline;
+    padding: 5px 15px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    color: #000;
+    cursor: pointer;
+}
+.btn-box-j .btn{
+    margin-left: 5px;
+}
+/*富文本编辑器*/
+.note-editor.panel{
+    background-color: transparent;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable{
+    color: #000;
+}
+.note-editor.panel-default>.panel-heading{
+    /*background-color: #285867;*/
+    /*border-color: #285867;*/
+}
+.note-editor .btn-default{
+    /*background-color: #a8c2d7;*/
+    /*border-color: #31708f;*/
+}
+/*富文本编辑器 end*/
+
+
+/*运行报告 end*/
+
+
